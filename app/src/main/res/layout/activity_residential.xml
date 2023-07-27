@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".residential">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/icon_outline_arrow_left"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:layout_marginStart="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What type of property is it?"
+                android:textSize="30sp"
+                android:fontFamily="@font/urbanist_bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Residential"
+                android:background="@drawable/but_dark"
+                android:textColor="@color/white"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="commercial"
+                android:background="@drawable/but_dark"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D3D3D3"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Property Type"
+                    android:fontFamily="@font/urbanist_bold"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="5dp"
+                    />
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_outline_arrow_left"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        >
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Falt/Apartment" />
+
+
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="House" />
+
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Villa" />
+
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Builder Floor" />
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plot" />
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Studio Apartment" />
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Penthouse" />
+                        <RadioButton
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/radio_button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="farm House" />
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
