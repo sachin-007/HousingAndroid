@@ -13,17 +13,71 @@
         android:theme="@style/Theme.Housing"
         tools:targetApi="31">
         <activity
+            android:name=".Industrial_land"
+            android:exported="false" />
+        <activity
+            android:name=".farm_house"
+            android:exported="false" />
+        <activity
+            android:name=".penthouse"
+            android:exported="false" />
+        <activity
+            android:name=".studio"
+            android:exported="false" />
+        <activity
+            android:name=".BuilderFloor"
+            android:exported="false" />
+        <activity
+            android:name=".Villa"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub9"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub8"
+            android:exported="false" />
+        <activity
+            android:name=".sub7"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub6"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub5_plt_width_any_boundary_gated_property_approval"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub4_shop"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub3_office"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sub2_commercialLand"
+            android:exported="false" />
+        <activity
+            android:name=".sub1_flat_apartment"
+            android:exported="false" />
+        <activity
+            android:name=".otpverify_number"
+            android:exported="false" />
+        <activity
+            android:name=".reccommercial"
+            android:exported="false" />
+        <activity
+            android:name=".Ready_to_const_popup"
+            android:exported="false" />
+        <activity
+            android:name=".status_of_property"
+            android:exported="false" />
+        <activity
+            android:name=".price_you_expect"
+            android:exported="false" />
+        <activity
             android:name=".HomeDashboard"
             android:exported="false" />
         <activity
             android:name=".moredetailtogetreleventbuyers"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".whereyoulocated"
             android:exported="false" />
@@ -47,7 +101,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

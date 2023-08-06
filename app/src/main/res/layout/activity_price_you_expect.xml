@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".price_you_expect">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/icon_outline_arrow_left"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price you Expect"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:fontFamily="@font/urbanist_bold"
+            android:layout_marginStart="15dp"
+            />
+
+        <EditText
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:drawableStart="@drawable/rupee"
+            android:paddingStart="10dp"
+            android:layout_marginTop="50dp"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expected price"
+            android:textColorHint="#D3D3D3"
+            android:fontFamily="@font/celebes_reguler"
+            android:textSize="18sp"
+            />
+
+        <EditText
+            android:drawableStart="@drawable/rupee"
+            android:paddingStart="10dp"
+            android:textColor="@color/black"
+            android:inputType="number"
+
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/celebes_reguler"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter bokking/token Amount(optimal)"
+            android:textColorHint="#D3D3D3"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="bottom|end">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tostatofprop"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@drawable/but_red"
+            android:text="Contine"
+            android:textAllCaps="false"
+
+            android:textSize="18sp"
+            android:fontFamily="@font/celebes_semi_bold"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

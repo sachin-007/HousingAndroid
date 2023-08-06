@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".fourth">
     <LinearLayout
@@ -28,15 +29,17 @@
         >
 
         <TextView
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hi"
             android:textSize="30sp"
+            android:textColor="@color/black"
             android:fontFamily="@font/urbanist_bold"
             />
         <TextView
-            android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sachin,"
@@ -52,79 +55,91 @@
         >
 
         <TextView
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="You are posting your property for:"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:fontFamily="@font/urbanist_bold"
             />
     </LinearLayout>
 
+
         <LinearLayout
-            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            >
+            android:padding="16dp">
 
-            <RadioButton
-                android:paddingStart="10dp"
-                android:layout_marginTop="10dp"
-                android:id="@+id/radio_button1"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:id="@+id/radio_group_options"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Sell" />
+                android:orientation="vertical">
 
-            <RadioButton
-                android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
+                <!-- Three RadioButtons representing your options -->
+                <RadioButton
+                    android:textSize="18sp"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:id="@+id/radio_option1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sell"
+                    android:textColor="@color/black"
 
-                android:id="@+id/radio_button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Rent"
-                android:layout_below="@id/radio_button1" />
+                    />
 
-            <RadioButton
-                android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
+                <RadioButton
 
-                android:id="@+id/radio_button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Commercial"
-                android:layout_below="@id/radio_button1" />
-            <RadioButton
-                android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:id="@+id/radio_option2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Rent"
+                    />
 
-                android:id="@+id/radio_button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Property"
-                android:layout_below="@id/radio_button1" />
+                <RadioButton
+                    android:textSize="18sp"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:id="@+id/radio_option3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Commercial"/>
 
-            <RadioButton
-                android:paddingStart="10dp"
+                <RadioButton
+                    android:textSize="18sp"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:id="@+id/radio_option4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="property"/>
+                <RadioButton
+                    android:textSize="18sp"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:id="@+id/radio_option5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="plots"/>
+                <RadioButton
+                    android:textSize="18sp"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:id="@+id/radio_option6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Projects"/>
+            </RadioGroup>
 
-                android:layout_marginTop="10dp"
-                android:id="@+id/radio_button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Plots"
-                android:layout_below="@id/radio_button1" />
 
-            <RadioButton
-                android:paddingStart="10dp"
-
-                android:layout_marginTop="10dp"
-                android:id="@+id/radio_button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Projects"
-                android:layout_below="@id/radio_button1" />
         </LinearLayout>
+
+
 
     </LinearLayout>
 

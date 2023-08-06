@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".whereyoulocated">
 
     <LinearLayout
@@ -29,8 +30,9 @@
             >
 
             <TextView
-                android:layout_marginStart="15dp"
+                android:layout_marginStart="10dp"
                 android:layout_width="wrap_content"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:text="Where is your property located?"
                 android:textSize="30sp"
@@ -41,16 +43,19 @@
         <TextView
             android:layout_marginTop="25dp"
             android:textSize="18sp"
+            android:textColor="#808080"
             android:layout_marginStart="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter City"
-            android:fontFamily="@font/urbanist_regular"
+            android:fontFamily="@font/celebes_semi_bold"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+
             android:hint="City Name"
             />
 
@@ -60,13 +65,17 @@
             android:layout_marginStart="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#808080"
+
             android:text="Enter Project/Society or Locality"
-            android:fontFamily="@font/urbanist_regular"
+            android:fontFamily="@font/celebes_semi_bold"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
+            android:textColor="@color/black"
+
             android:hint="Society or Locality"
             />
 
@@ -74,14 +83,17 @@
             android:layout_marginTop="25dp"
             android:textSize="18sp"
             android:layout_marginStart="15dp"
+            android:textColor="#808080"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Enter Address (Optional)"
-            android:fontFamily="@font/urbanist_regular"
+            android:fontFamily="@font/celebes_semi_bold"
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/black"
             android:layout_marginStart="15dp"
             />
 
@@ -92,12 +104,16 @@
             android:layout_height="match_parent"
             >
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/morerelvdet"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:text="Contine"
                 android:textColor="@color/white"
                 android:background="@drawable/but_red"
                 android:textAllCaps="false"
+
+                android:textSize="18sp"
+                android:fontFamily="@font/celebes_semi_bold"
                 />
 
         </LinearLayout>

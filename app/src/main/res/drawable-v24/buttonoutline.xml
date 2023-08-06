@@ -1,0 +1,28 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background shape (for the thin grey outline) -->
+    <item>
+        <shape
+            android:layout_width="match_parent"
+            android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#A0A0A0" />
+            <corners android:radius="16dp" />
+            <padding
+                android:bottom="8dp"
+                android:left="8dp"
+                android:right="8dp"
+                android:top="8dp" />
+        </shape>
+    </item>
+
+    <!-- Add the actual content of the button -->
+    <item android:left="4dp" android:right="4dp" android:top="4dp" android:bottom="4dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFFFF " /> <!-- Set the button color here -->
+            <corners android:radius="16dp" /> <!-- Use the same curve radius as the background -->
+        </shape>
+    </item>
+
+</layer-list>

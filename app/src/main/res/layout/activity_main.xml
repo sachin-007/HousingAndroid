@@ -39,7 +39,7 @@
             android:fontFamily="@font/urbanist_bold"
             android:textColor="@color/black"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="8dp"
             android:text="Sell or Rent"/>
         <TextView
             android:layout_width="wrap_content"
@@ -59,6 +59,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
             android:layout_marginStart="15dp"
             android:textSize="20dp"
             android:text="We have over 15 Lac buyers and tenants for you!"
@@ -84,15 +85,15 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:textSize="20dp"
-            android:text="₹5000"
+            android:text="₹̶5̶0̶0̶0̶"
             android:textColor="@color/black"
-
             />
         <ImageView
             android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/icon_outline_arrow_left"
+            android:layout_width="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_height="25dp"
+            android:src="@drawable/free"
             />
     </LinearLayout>
 
@@ -108,18 +109,27 @@
             android:layout_height="wrap_content"
             >
             <ImageView
+                android:layout_gravity="center_vertical"
+
                 android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_launcher_background"/>
+                android:layout_height="15dp"
+                android:background="@drawable/rightdone"
+                />
             <TextView
                 android:paddingStart="10dp"
+                android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="16sp"
+
                 android:text="Get Contact Details of upto"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textSize="16sp"
+
+                android:textColor="@color/black"
                 android:text=" 5 Responses"
                 android:fontFamily="@font/celebes_semi_bold"
                 />
@@ -132,24 +142,35 @@
             >
             <ImageView
                 android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:background="@drawable/ic_launcher_background"/>
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/rightdone"
+                />
             <TextView
                 android:paddingStart="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
                 android:text="Access to"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+
                 android:text=" 15 Lac"
                 android:fontFamily="@font/celebes_semi_bold"
                 />
             <TextView
+                android:textSize="16sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Buyers &amp; Tenants"
+                android:text=" Buyers &amp; Tenants"
+                android:textColor="@color/black"
+
                 />
         </LinearLayout>
         <LinearLayout
@@ -161,6 +182,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/celebes_reguler"
+                android:textSize="16sp"
                 android:text="Get"
                 />
             <TextView
@@ -168,12 +191,15 @@
                 android:layout_height="wrap_content"
                 android:text=" 10X more"
                 android:textColor="#00FFFF"
+                android:textSize="16sp"
                 android:fontFamily="@font/celebes_semi_bold"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Responses by just"
+                android:fontFamily="@font/celebes_reguler"
+                android:textSize="16sp"
+                android:text=" Responses by just"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -184,9 +210,12 @@
         android:layout_height="match_parent"
         >
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/firstnext"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
         android:text="Contine"
+        android:textSize="18sp"
+        android:fontFamily="@font/celebes_semi_bold"
         android:textColor="@color/white"
         android:background="@drawable/but_red"
         android:textAllCaps="false"
@@ -194,5 +223,7 @@
 
     </LinearLayout>
 
+
 </LinearLayout>
+
 </RelativeLayout>

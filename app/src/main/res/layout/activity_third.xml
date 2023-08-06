@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".third">
 
     <LinearLayout
@@ -31,33 +32,40 @@
         </LinearLayout>
 
         <TextView
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Help property seekers connect with you"
+            android:textColor="@color/black"
             android:textSize="30sp"
             android:fontFamily="@font/urbanist_bold"
         />
     </LinearLayout>
-        <TextView
-            android:layout_marginTop="35dp"
+
+        <EditText
+            android:layout_marginTop="40dp"
+            android:hint="Name"
             android:layout_marginStart="15dp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:hint="Name"
+            android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:textColorHint="#D3D3D3"
             />
 
-        <TextView
-            android:layout_marginTop="35dp"
-            android:layout_marginStart="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
+
+
+        <EditText
             android:hint="Email id"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#D3D3D3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:textColor="@color/black"
+            android:layout_marginStart="15dp"
             />
 
         <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -70,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:hint="+91"
+                android:textColor="@color/black"
                 android:maxLines="1"
                 android:imeOptions="actionNext" />
 
@@ -79,7 +88,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
+                android:textColor="@color/black"
+
                 android:hint="WhatsApp Number"
+                android:textColorHint="#D3D3D3"
                 android:maxLines="1"
                 android:imeOptions="actionDone" />
 
@@ -91,12 +103,15 @@
             android:layout_height="match_parent"
             >
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/contfourth"
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:text="Contine"
                 android:textColor="@color/white"
                 android:background="@drawable/but_red"
                 android:textAllCaps="false"
+                android:textSize="18sp"
+                android:fontFamily="@font/celebes_semi_bold"
                 />
 
         </LinearLayout>
