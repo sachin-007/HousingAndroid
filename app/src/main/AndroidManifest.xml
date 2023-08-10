@@ -13,6 +13,51 @@
         android:theme="@style/Theme.Housing"
         tools:targetApi="31">
         <activity
+            android:name=".cardveiwtemp"
+            android:exported="false" />
+        <activity
+            android:name=".AddonActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainTabFragment"
+            android:exported="false" />
+        <activity
+            android:name=".chaitali2"
+            android:exported="false" />
+        <activity
+            android:name=".chaitali"
+            android:exported="false" />
+        <activity
+            android:name=".AddOnPlan"
+            android:exported="false" />
+        <activity
+            android:name=".plan_card_main"
+            android:exported="false" />
+        <activity
+            android:name=".plan_card_4addon"
+            android:exported="false" />
+        <activity
+            android:name=".plan_card3"
+            android:exported="false" />
+        <activity
+            android:name=".planCard2"
+            android:exported="false" />
+        <activity
+            android:name=".item_carousel"
+            android:exported="false" />
+        <activity
+            android:name=".PlanCard"
+            android:exported="false" />
+        <activity
+            android:name=".ApplicationView"
+            android:exported="false" />
+        <activity
             android:name=".Industrial_land"
             android:exported="false" />
         <activity
@@ -101,12 +146,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

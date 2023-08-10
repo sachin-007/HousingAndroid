@@ -9,4 +9,18 @@
         <item>above 20 years</item>
     </string-array>
 
+
+    <string-array name="roomsfloors">
+        <item>5 BHK</item>
+        <item>6 BHK</item>
+        <item>7 BHK</item>
+        <item>8 BHK</item>
+        <item>9 BHK</item>
+        <item>10 BHK</item>
+        <!-- Add more options as needed -->
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

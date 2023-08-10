@@ -13,17 +13,14 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
+
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/drawable_top_layout"
         >
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/icon_outline_arrow_left"
-            />
-    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -42,6 +39,7 @@
     </LinearLayout>
 
         <LinearLayout
+            android:layout_marginBottom="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
@@ -53,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="Residential"
-                android:background="@drawable/buttonoutline"
+                android:background="@drawable/btn_background"
                 android:textColor="@color/black"
                 />
 
@@ -66,10 +64,13 @@
                 android:text="commercial"
                 android:layout_margin="10dp"
                 android:textColor="@color/black"
-                android:background="@drawable/buttonoutline"
+                android:background="@drawable/btn_background"
+
                 />
 
         </LinearLayout>
+    </LinearLayout>
+<!--        end of Tab-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -100,158 +101,349 @@
                     >
                     <ImageView
                         android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/icon_outline_arrow_left"
-
-                        />
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/down" />
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
-                android:padding="15dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
-
-                <ScrollView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-
-                        >
-
-                        <RadioGroup
-                            android:id="@+id/radio_group_commercial"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-                <RadioButton
-                    android:paddingStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:id="@+id/Office_Space"
-                    android:layout_width="wrap_content"
-                    android:textColor="@color/black"
-
-                    android:fontFamily="@font/celebes_reguler"
-                    android:textSize="18sp"
                     android:layout_height="wrap_content"
-                    android:text="Office Space" />
-
-
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:id="@+id/Office_IT_Park_SEZ"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="@color/black"
-                            android:text="Office IT Park/ SEZ" />
-
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/Shop"
-                            android:layout_width="wrap_content"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_height="wrap_content"
-                            android:text="Shop" />
-
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/Showroom"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Showroom" />
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/Commercial_Land"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Commercial Land" />
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/Warehouse_Godown"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Warehouse / Godown" />
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/Industrial_Land"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Industrial Land" />
-                        <RadioButton
-                        android:paddingStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/Industrial_Building"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Industrial Building" />
-                        <RadioButton
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
                         android:paddingStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/Industrial_Shed"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
-                            android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Industrial Shed" />
-                        <RadioButton
-                            android:paddingStart="10dp"
-                            android:layout_marginTop="10dp"
-                            android:id="@+id/Agicultural_Land"
-                            android:textColor="@color/black"
-
-                            android:fontFamily="@font/celebes_reguler"
-                            android:textSize="18sp"
+                        android:text="Office Space"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Agicultural Land" />
-
-                        </RadioGroup>
-
+                            android:src="@drawable/right_arrow" />
                     </LinearLayout>
-                </ScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Office IT Park/ SEZ"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Shop"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Showroom"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Commercial Land"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Warehouse / Godown"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Industrial Land"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Industrial Building"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Industrial Shed"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:paddingStart="10dp"
+                        android:text="Agicultural Land"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+
             </LinearLayout>
 
-        </LinearLayout>
+
+</LinearLayout>
     </LinearLayout>
 </RelativeLayout>

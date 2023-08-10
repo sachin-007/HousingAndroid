@@ -1,0 +1,13 @@
+<!-- bg_gradient.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    
+    <corners android:radius="10dp" /> <!-- Rounded corner radius -->
+
+    <!-- Define the gradient orientation (horizontal or vertical) -->
+    <gradient
+        android:angle="45"
+        android:startColor="#647DEE"
+        android:endColor="#7F53AC"
+        android:type="linear" />
+</shape>

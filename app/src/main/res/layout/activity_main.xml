@@ -14,19 +14,10 @@
 
     >
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/icon_outline_arrow_left"
-            />
-    </LinearLayout>
+
 
     <LinearLayout
+        android:layout_marginTop="60dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -39,9 +30,9 @@
             android:fontFamily="@font/urbanist_bold"
             android:textColor="@color/black"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="8dp"
             android:text="Sell or Rent"/>
         <TextView
+
             android:layout_width="wrap_content"
             android:textSize="35dp"
             android:layout_marginBottom="15dp"
@@ -59,6 +50,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/celebes_reguler"
 
             android:layout_marginStart="15dp"
             android:textSize="20dp"
@@ -66,6 +58,8 @@
             android:textColor="@color/black"
             />
         <TextView
+
+            android:fontFamily="@font/celebes_reguler"
             android:layout_marginTop="35dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,11 +75,13 @@
         android:layout_height="wrap_content">
 
         <TextView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:textSize="20dp"
             android:text="₹̶5̶0̶0̶0̶"
+            android:fontFamily="@font/celebes_semi_bold"
             android:textColor="@color/black"
             />
         <ImageView
@@ -121,6 +117,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
+                android:fontFamily="@font/celebes_reguler"
+
 
                 android:text="Get Contact Details of upto"
                 />
@@ -128,7 +126,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="16sp"
-
                 android:textColor="@color/black"
                 android:text=" 5 Responses"
                 android:fontFamily="@font/celebes_semi_bold"
@@ -152,6 +149,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                android:fontFamily="@font/celebes_reguler"
 
                 android:text="Access to"
                 />
@@ -170,11 +168,12 @@
                 android:layout_height="wrap_content"
                 android:text=" Buyers &amp; Tenants"
                 android:textColor="@color/black"
+                android:fontFamily="@font/celebes_reguler"
 
                 />
         </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:layout_marginStart="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -185,6 +184,7 @@
                 android:fontFamily="@font/celebes_reguler"
                 android:textSize="16sp"
                 android:text="Get"
+
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -198,6 +198,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/celebes_reguler"
+
                 android:textSize="16sp"
                 android:text=" Responses by just"
                 />

@@ -19,7 +19,7 @@
                 <ImageView
                     android:layout_width="25dp"
                     android:layout_height="20dp"
-                    android:layout_margin="15dp"
+                    android:layout_margin="20dp"
                     android:src="@drawable/icon_outline_arrow_left"
                     />
             </LinearLayout>
@@ -30,10 +30,11 @@
                 >
 
                 <TextView
-                    android:layout_marginStart="10dp"
+                    android:layout_marginStart="20dp"
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+
                     android:text="More details to get relevent buyers"
                     android:textSize="30sp"
                     android:fontFamily="@font/urbanist_bold"

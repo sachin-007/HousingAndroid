@@ -8,21 +8,12 @@
     tools:context=".reccommercial">
 
     <LinearLayout
+        android:background="@drawable/drawable_top_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/icon_outline_arrow_left"
-            />
-    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -41,6 +32,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_marginBottom="12dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         >
@@ -52,7 +44,7 @@
             android:layout_height="wrap_content"
             android:textAllCaps="false"
             android:text="Residential"
-            android:background="@drawable/buttonoutline"
+            android:background="@drawable/btn_background"
             android:textColor="@color/black"
             />
 
@@ -65,7 +57,8 @@
             android:text="commercial"
             android:layout_margin="10dp"
             android:textColor="@color/black"
-            android:background="@drawable/buttonoutline"
+            android:background="@drawable/btn_background"
+
             />
 
     </LinearLayout>

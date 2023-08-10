@@ -9,6 +9,7 @@
 
 
     <LinearLayout
+        android:id="@+id/mainlin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -43,8 +44,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/residentialButton"
                 android:layout_margin="10dp"
@@ -53,9 +53,8 @@
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
                 android:text="Residential"
-                android:background="@drawable/buttonoutline"
-                android:textColor="@color/black"
-                />
+                android:background="@drawable/btn_background"
+                android:textColor="@color/black" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/commercialButton"
@@ -66,7 +65,7 @@
                 android:text="commercial"
                 android:layout_margin="10dp"
                 android:textColor="@color/black"
-                android:background="@drawable/buttonoutline"
+                android:background="@drawable/btn_background"
                 />
 
         </LinearLayout>
@@ -74,169 +73,261 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-
-            >
+            android:orientation="vertical">
             <LinearLayout
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Property Type"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/urbanist_bold"
                     android:layout_marginStart="15dp"
                     android:layout_marginBottom="5dp"
-                    />
+                    android:fontFamily="@font/urbanist_bold"
+                    android:text="Property Type"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
                 <LinearLayout
                     android:gravity="end"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    >
+                    android:layout_height="wrap_content">
                     <ImageView
                         android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="15dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/icon_outline_arrow_left"
-
-                        />
+                        android:layout_marginEnd="20dp"
+                        android:layout_width="15dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/down" />
                 </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <ScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    >
-                    <LinearLayout
-                        android:padding="15dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-
-                        >
-
-                        <RadioGroup
-                            android:id="@+id/radio_group_options"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <!-- Three RadioButtons representing your options -->
-
-
-                            <RadioButton
-
-                                android:id="@+id/Falt_Apartment"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-                                android:text="Falt/Apartment"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-
-                            <RadioButton
-                                android:id="@+id/House"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-                                android:text="House"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <RadioButton
-                                android:id="@+id/Villa"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-                                android:text="Villa"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <RadioButton
-                                android:id="@+id/Builder_Floor"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-                                android:text="Builder Floor"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <RadioButton
-                                android:id="@+id/Plot"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-                                android:text="Plot"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <RadioButton
-                                android:id="@+id/Studio_Apartment"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-
-                                android:text="Studio Apartment"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <RadioButton
-                                android:id="@+id/Penthouse"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-
-                                android:text="Penthouse"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-
-                            <RadioButton
-                                android:id="@+id/farm_House"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:fontFamily="@font/celebes_reguler"
-                                android:paddingStart="10dp"
-
-                                android:text="farm House"
-                                android:textColor="@color/black"
-                                android:textSize="18sp" />
-                        </RadioGroup>
-
-                    </LinearLayout>
-                </ScrollView>
-            </LinearLayout>
-
         </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+            android:onClick="onFalt_Apartment"
+            android:id="@+id/Falt_Apartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="Falt/Apartment"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+
+            android:id="@+id/House"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="House"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:clickable="true"
+
+            android:id="@+id/Villa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="Villa"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+
+            android:id="@+id/Builder_Floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="Builder Floor"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+
+            android:id="@+id/Plot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="Plot"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+
+            android:id="@+id/Studio_Apartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="Studio Apartment"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+
+            android:id="@+id/Penthouse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text=" Penthouse"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:clickable="true"
+
+            android:id="@+id/farm_House"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/celebes_reguler"
+                android:paddingStart="10dp"
+                android:text="farm House"
+                android:textColor="@color/black"
+                android:textSize="18sp"/>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
     </LinearLayout>
 </RelativeLayout>

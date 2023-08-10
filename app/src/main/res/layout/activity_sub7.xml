@@ -33,7 +33,7 @@
             >
 
             <TextView
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="20dp"
                 android:textColor="@color/black"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -63,6 +63,7 @@
                 android:text="Floor Details"
                 android:textColor="@color/black"
                 android:textSize="20sp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/celebes_semi_bold"
                 android:layout_marginBottom="5dp"
                 />
@@ -132,80 +133,77 @@
                 android:layout_weight="1" />
     </LinearLayout>
         <LinearLayout
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             >
+
             <TextView
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Floor Details"
-                android:textColor="@color/black"
-                android:textSize="20sp"
                 android:fontFamily="@font/celebes_semi_bold"
-                android:layout_marginBottom="5dp"
-                />
+                android:text="Furnishing"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
 
-            <EditText
+            >
 
-                android:textSize="18sp"
-                android:fontFamily="@font/celebes_reguler"
+            <RadioGroup
+                android:id="@+id/radio_group_options"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:hint="Unfurnished"
-                android:text=""
-                android:textColorHint="#808080"
-                android:textColor="@color/black" />
+                android:orientation="vertical">
+
+                <!-- Three RadioButtons representing your options -->
 
 
+
+                <RadioButton
+                    android:fontFamily="@font/celebes_reguler"
+                    android:textSize="18sp"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Falt_Apartment"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Unfurnished" />
+
+                <RadioButton
+                    android:fontFamily="@font/celebes_reguler"
+                    android:textSize="18sp"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Falt_Apartment"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Semi-Furnished" />
+
+                <RadioButton
+                    android:fontFamily="@font/celebes_reguler"
+                    android:textSize="18sp"
+                    android:paddingStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/Falt_Apartment"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Fully-Furnished" />
+
+            </RadioGroup>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <EditText
-
-                android:textSize="18sp"
-                android:fontFamily="@font/celebes_reguler"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:hint="Semi-Furnished"
-                android:text=""
-                android:textColorHint="#808080"
-                android:textColor="@color/black" />
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <EditText
-
-                android:textSize="18sp"
-                android:fontFamily="@font/celebes_reguler"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:hint="Fully-Furnished"
-                android:text=""
-                android:textColorHint="#808080"
-                android:textColor="@color/black" />
-
-
-        </LinearLayout>
         <LinearLayout
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
@@ -217,6 +215,7 @@
                 android:text="Property Area"
                 android:textColor="@color/black"
                 android:textSize="20sp"
+                android:layout_marginStart="10dp"
                 android:fontFamily="@font/celebes_semi_bold"
                 android:layout_marginBottom="5dp"
                 />
@@ -237,6 +236,7 @@
                 android:layout_marginTop="15dp"
                 android:hint="Carpet Area"
                 android:text=""
+                android:layout_marginStart="10dp"
                 android:textColorHint="#808080"
                 android:textColor="@color/black" />
 

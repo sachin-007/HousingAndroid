@@ -23,51 +23,51 @@ public class residentialNcommercial extends AppCompatActivity {
         setContentView(R.layout.activity_residential_ncommercial);
 
 
-        radioGroup = findViewById(R.id.radio_group_commercial);
+//        radioGroup = findViewById(R.id.radio_group_commercial);
+//
+//        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+//            @Override
+//            public void onCheckedChanged(RadioGroup group, int checkedId) {
+//
+//                if (checkedId == R.id.Office_Space) {
+//                    Office_Space();
+//                } else if (checkedId == R.id.Office_IT_Park_SEZ) {
+//                    Office_IT_Park_SEZ();
+//                } else if (checkedId == R.id.Shop){
+//                    Shop();
+//                } else if (checkedId==R.id.Showroom) {
+//                    Showroom();
+//                } else if (checkedId==R.id.Commercial_Land) {
+//                    Commercial_Land();
+//                } else if (checkedId==R.id.Warehouse_Godown) {
+//                    Warehouse_Godown();
+//                }else if (checkedId==R.id.Industrial_Land)
+//                {
+//                    Industrial_Land();
+//                } else if (checkedId==R.id.Industrial_Building) {
+//                    Industrial_Building();
+//                }else if (checkedId==R.id.Industrial_Shed)
+//                {
+//                    Industrial_Shed();
+//                } else if (checkedId==R.id.Agicultural_Land) {
+//                    Agicultural_Land();
+//                }
+//
+//
+//
+//            }
+//        });
 
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-
-                if (checkedId == R.id.Office_Space) {
-                    Office_Space();
-                } else if (checkedId == R.id.Office_IT_Park_SEZ) {
-                    Office_IT_Park_SEZ();
-                } else if (checkedId == R.id.Shop){
-                    Shop();
-                } else if (checkedId==R.id.Showroom) {
-                    Showroom();
-                } else if (checkedId==R.id.Commercial_Land) {
-                    Commercial_Land();
-                } else if (checkedId==R.id.Warehouse_Godown) {
-                    Warehouse_Godown();
-                }else if (checkedId==R.id.Industrial_Land)
-                {
-                    Industrial_Land();
-                } else if (checkedId==R.id.Industrial_Building) {
-                    Industrial_Building();
-                }else if (checkedId==R.id.Industrial_Shed)
-                {
-                    Industrial_Shed();
-                } else if (checkedId==R.id.Agicultural_Land) {
-                    Agicultural_Land();
-                }
-
-
-
-            }
-        });
-
-        residentialButton = findViewById(R.id.residentialButton);
-
-        residentialButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Start the ResidentialActivity
-                Intent intent = new Intent(residentialNcommercial.this, residential.class);
-                startActivity(intent);
-            }
-        });
+//        residentialButton = findViewById(R.id.residentialButton);
+//
+//        residentialButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Start the ResidentialActivity
+//                Intent intent = new Intent(residentialNcommercial.this, residential.class);
+//                startActivity(intent);
+//            }
+//        });
 
 //        RadioGroup radioGroupOptions = findViewById(R.id.radio_group_options);
 //
@@ -85,6 +85,11 @@ public class residentialNcommercial extends AppCompatActivity {
 
 
     }
+
+
+
+
+
     private void Office_Space() {
         Intent intent = new Intent(residentialNcommercial.this, activity_sub3_office.class);
         startActivity(intent);

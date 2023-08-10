@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ApplicationView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/celebes_reguler"
+                android:text="Bedroom" />
+
+            <LinearLayout
+                android:id="@+id/llSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textboxwhite"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/celebes_reguler"
+
+                    android:text="1 BHK" />
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/celebes_reguler"
+
+                    android:background="@drawable/textboxwhite"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="2 BHK" />
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/celebes_reguler"
+
+                    android:background="@drawable/textboxwhite"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="3 BHK" />
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/textboxwhite"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/celebes_reguler"
+
+                    android:text="4 BHK" />
+
+
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/textboxwhite"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:textColor="@color/black"
+                    android:id="@+id/lastitem"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_weight="1"
+                    android:text="5BHK+"
+                    android:padding="8dp"
+                    android:gravity="center_vertical" />
+
+                <Spinner
+
+                    android:id="@+id/spinnerOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Selected option:"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

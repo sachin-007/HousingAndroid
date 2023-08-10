@@ -25,7 +25,7 @@ public class fourth extends AppCompatActivity {
                 RadioButton selectedRadioButton = findViewById(checkedId);
                 String selectedOption = selectedRadioButton.getText().toString();
 
-                Intent intent = new Intent(fourth.this, reccommercial.class);
+                Intent intent = new Intent(fourth.this, MainTabFragment.class);
                 intent.putExtra("selectedOption", selectedOption);
                 startActivity(intent);
             }

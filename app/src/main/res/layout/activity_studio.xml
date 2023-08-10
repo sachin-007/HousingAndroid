@@ -357,7 +357,7 @@
 
 
 
-                                    <RadioButton
+                                        <RadioButton
                                         android:fontFamily="@font/celebes_reguler"
                                         android:textSize="18sp"
                                         android:paddingStart="10dp"

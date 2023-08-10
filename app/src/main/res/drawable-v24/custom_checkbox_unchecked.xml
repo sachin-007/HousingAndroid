@@ -1,0 +1,3 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_checkbox_unchecked" /> <!-- Use your drawable resource -->
+</selector>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- First item: The top area with a white background -->
+    <item android:top="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+
+    <!-- Second item: The gray horizontal separator -->
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#C0C0C0" />
+        </shape>
+    </item>
+</layer-list>
