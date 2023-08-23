@@ -6,27 +6,20 @@
     android:layout_height="match_parent"
     android:background="#8a8a8a"
     tools:context=".AddonActivity">
-        <LinearLayout
-            android:id="@+id/actionlayout"
-            android:layout_width="match_parent"
-            android:layout_height="?actionBarSize"
-            android:orientation="horizontal">
-        </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/actionlayout"
             android:orientation="vertical">
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_stock_white"
+                android:background="@drawable/adon_feature_background"
                 android:paddingStart="15dp"
-                android:paddingTop="15dp"
                 android:paddingBottom="15dp"
+                android:paddingTop="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
@@ -47,16 +40,13 @@
 
                         <TextView
                             android:layout_width="match_parent"
-
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_gravity="start"
                             android:fontFamily="@font/museosans_500"
-
                             android:gravity="start"
                             android:text="Cyber Insurance"
                             android:textColor="@color/black"
-
                             android:textSize="20sp" />
                         <LinearLayout
                             android:gravity="end"
@@ -72,32 +62,20 @@
                                 android:padding="4dp"
                                 android:scaleX="0.8"
                                 android:scaleY="0.8"
-                            />
-
+                                />
                         </LinearLayout>
                     </LinearLayout>
-
                     <LinearLayout
-                        android:paddingEnd="15dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
-
-                    <LinearLayout
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <ImageView
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:src="@drawable/rightdone"/>
                         <TextView
-
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -106,39 +84,22 @@
                             android:gravity="center_vertical"
                             android:text="Floor Plan: Open-concept, traditional"
                             android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
-
-                    <!--<CheckBox
-                        android:layout_width="16dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:gravity="end"
-                        />-->
-
-
-
-                    <!--<CheckBox
-                        android:layout_width="16dp"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
-                        android:gravity="end"
-                        />-->
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
                         <ImageView
-
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
                             android:src="@drawable/rightdone"/>
                         <TextView
-
+                            android:layout_marginTop="1dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -147,11 +108,13 @@
                             android:gravity="center_vertical"
                             android:text="Flooring: Hardwood, tile"
                             android:textColor="@color/black"
-                            android:textSize="16sp" />
+                            android:textSize="14sp" />
 
-                    </LinearLayout><LinearLayout
+                    </LinearLayout>
+                    <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
                     android:orientation="horizontal">
                     <ImageView
 
@@ -160,7 +123,7 @@
                         android:layout_gravity="center_vertical"
                         android:src="@drawable/rightdone"/>
                     <TextView
-
+                        android:layout_marginTop="1dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
@@ -169,11 +132,9 @@
                         android:gravity="center_vertical"
                         android:text="Lighting: Recessed lighting, "
                         android:textColor="@color/black"
-                        android:textSize="16sp" />
+                        android:textSize="14sp" />
 
                 </LinearLayout>
-                    </LinearLayout>
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -186,23 +147,21 @@
                         android:gravity="bottom"
                         android:text="From" />
 
-
-
-
                     <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="14sp"
-                        android:drawablePadding="5dp"
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:paddingEnd="5dp"
+                            android:drawablePadding="5dp"
 
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/museosans_500"
-                        android:gravity="bottom"
-                        android:text="1500₹/mon" />
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/museosans_500"
+                            android:gravity="bottom"
+                            android:text="1500₹/mon" />
                         <ImageView
                             android:layout_marginStart="2dp"
                             android:layout_gravity="center_vertical"
@@ -254,9 +213,15 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_stock_white"
+                android:background="@drawable/adon_feature_background"
 
-                android:padding="15dp"
+
+                android:paddingStart="15dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+
+
+
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
@@ -276,31 +241,35 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_gravity="start"
                             android:fontFamily="@font/museosans_500"
-
                             android:gravity="start"
                             android:text="Cyber Insurance"
                             android:textColor="@color/black"
 
                             android:textSize="20sp" />
-                        <!--                        <CheckBox-->
-                        <!--                            android:layout_width="16dp"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:layout_gravity="top"-->
-                        <!--                            android:gravity="end"-->
-                        <!--                            />-->
-                        <!--                        <ImageView-->
-                        <!--                            android:layout_width="wrap_content"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:src="@drawable/custom_checkbox_checked"-->
-                        <!--                            />-->
+                        <LinearLayout
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            >
+                            <CheckBox
+                                android:id="@+id/myCheckBox"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="10dp"
+                                android:padding="4dp"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                />
+                        </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
@@ -366,6 +335,8 @@
                     </LinearLayout><LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+
                     android:orientation="horizontal">
                     <ImageView
 
@@ -408,7 +379,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
+                            android:textSize="20sp"
+                            android:paddingEnd="5dp"
                             android:drawablePadding="5dp"
 
                             android:textColor="@color/black"
@@ -449,6 +421,7 @@
                             android:gravity="end"
                             android:textColor="	#6495ED"
                             android:textSize="12sp"
+                            android:paddingEnd="15dp"
                             android:text="view more" />
 
                     </LinearLayout>
@@ -458,86 +431,6 @@
 
                 </LinearLayout>
 
-                <!--
-                            <LinearLayout
-                                android:layout_width="160dp"
-                                android:layout_height="200dp"
-                                android:layout_marginEnd="10dp"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="2dp">
-
-                                <CheckBox
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="right"
-                                    android:gravity="right" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Cyber Insurence"
-                                    android:textColor="@color/black"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Share Hosting"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Share Hosting"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Share Hosting"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_margin="10dp"
-                                        android:layout_weight="1"
-                                        android:gravity="bottom"
-                                        android:text="2$/mon" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_margin="10dp"
-                                        android:gravity="bottom"
-                                        android:text="view more" />
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-                -->
-
 
             </LinearLayout>
 
@@ -545,8 +438,15 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/btn_stock_white"
-                android:padding="15dp"
+                android:background="@drawable/adon_feature_background"
+
+
+                android:paddingStart="15dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+
+
+
                 android:layout_marginTop="15dp"
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="15dp"
@@ -566,43 +466,35 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="wrap_content"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:layout_gravity="start"
                             android:fontFamily="@font/museosans_500"
-
                             android:gravity="start"
                             android:text="Cyber Insurance"
                             android:textColor="@color/black"
 
                             android:textSize="20sp" />
-                        <!--                        <CheckBox-->
-                        <!--                            android:layout_width="16dp"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:layout_gravity="top"-->
-                        <!--                            android:gravity="end"-->
-                        <!--                            />-->
-                        <!--                        <ImageView-->
-                        <!--                            android:layout_width="wrap_content"-->
-                        <!--                            android:layout_height="wrap_content"-->
-                        <!--                            android:src="@drawable/custom_checkbox_checked"-->
-                        <!--                            />-->
+                        <LinearLayout
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            >
+                            <CheckBox
+                                android:id="@+id/myCheckBox"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_marginEnd="10dp"
+                                android:padding="4dp"
+                                android:scaleX="0.8"
+                                android:scaleY="0.8"
+                                />
+                        </LinearLayout>
                     </LinearLayout>
-
-
-
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        >
-
-
-
-
-                    <LinearLayout
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="8dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
@@ -622,7 +514,7 @@
                             android:gravity="center_vertical"
                             android:text="Floor Plan: Open-concept, traditional"
                             android:textColor="@color/black"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout>
 
@@ -660,15 +552,16 @@
                             android:layout_marginStart="10dp"
                             android:layout_gravity="top"
                             android:fontFamily="@font/museosans_300"
-
                             android:gravity="center_vertical"
                             android:text="Flooring: Hardwood, tile"
                             android:textColor="@color/black"
-                            android:textSize="12sp" />
+                            android:textSize="14sp" />
 
                     </LinearLayout><LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+
                     android:orientation="horizontal">
                     <ImageView
 
@@ -686,10 +579,9 @@
                         android:gravity="center_vertical"
                         android:text="Lighting: Recessed lighting, "
                         android:textColor="@color/black"
-                        android:textSize="12sp" />
+                        android:textSize="14sp" />
 
                 </LinearLayout>
-                    </LinearLayout>
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -712,7 +604,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="14sp"
+                            android:textSize="20sp"
+                            android:paddingEnd="5dp"
                             android:drawablePadding="5dp"
 
                             android:textColor="@color/black"
@@ -753,6 +646,7 @@
                             android:gravity="end"
                             android:textColor="	#6495ED"
                             android:textSize="12sp"
+                            android:paddingEnd="15dp"
                             android:text="view more" />
 
                     </LinearLayout>
@@ -762,101 +656,24 @@
 
                 </LinearLayout>
 
-                <!--
-                            <LinearLayout
-                                android:layout_width="160dp"
-                                android:layout_height="200dp"
-                                android:layout_marginEnd="10dp"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:padding="2dp">
-
-                                <CheckBox
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="right"
-                                    android:gravity="right" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Cyber Insurence"
-                                    android:textColor="@color/black"
-                                    android:textSize="18sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Share Hosting"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Share Hosting"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="5dp"
-                                    android:fontFamily="@font/celebes_semi_bold"
-                                    android:gravity="center"
-                                    android:text="Share Hosting"
-                                    android:textColor="@color/black"
-                                    android:textSize="16sp" />
-
-                                <LinearLayout
-                                    android:orientation="horizontal"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_margin="10dp"
-                                        android:layout_weight="1"
-                                        android:gravity="bottom"
-                                        android:text="2$/mon" />
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_margin="10dp"
-                                        android:gravity="bottom"
-                                        android:text="view more" />
-
-                                </LinearLayout>
-
-
-                            </LinearLayout>
-                -->
-
 
             </LinearLayout>
 
 
             <androidx.appcompat.widget.AppCompatButton
+
                 android:id="@+id/button"
-                android:layout_width="150dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/museosans_500"
-                android:background="@drawable/btn_stock_white"
+                android:background="@drawable/bg_gred_card"
                 android:text="Add On"
                 android:textAllCaps="false"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
     </RelativeLayout>

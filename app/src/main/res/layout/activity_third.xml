@@ -24,6 +24,7 @@
             android:layout_height="wrap_content"
             >
             <ImageView
+                android:id="@+id/backbtn"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
                 android:layout_margin="20dp"
@@ -45,8 +46,8 @@
     </LinearLayout>
 
         <EditText
+            android:id="@+id/name"
             android:drawablePadding="10dp"
-
             android:background="@drawable/textwhiteblack1"
             android:layout_marginTop="40dp"
             android:hint=" Name"
@@ -60,9 +61,8 @@
             android:textColorHint="#D3D3D3"
             />
 
-
-
         <EditText
+            android:id="@+id/email"
             android:drawablePadding="10dp"
             android:background="@drawable/textwhiteblack1"
             android:layout_marginTop="35dp"
@@ -101,8 +101,8 @@
 
             <!-- EditText for Phone Number -->
             <EditText
+                android:id="@+id/phone"
                 android:backgroundTint="@android:color/transparent"
-                android:id="@+id/edit_text_phone_number"
                 android:inputType="phone"
                 android:textColor="@color/black"
                 android:layout_marginEnd="15dp"

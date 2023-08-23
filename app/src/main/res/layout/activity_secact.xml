@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             >
             <ImageView
+                android:id="@+id/backbtn"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
                 android:layout_margin="15dp"
@@ -58,19 +59,18 @@
 
                 <!-- Three RadioButtons representing your options -->
                 <RadioButton
-                    android:id="@+id/radio_option1"
+                    android:id="@+id/OwnerRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="I am an Owner"
                     android:textColor="@color/black"
-
                     android:fontFamily="@font/celebes_reguler"
                     android:textSize="18sp"
 
                     />
 
                 <RadioButton
-                    android:id="@+id/radio_option2"
+                    android:id="@+id/AgentRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"
@@ -80,7 +80,7 @@
                     android:text="I am Agent"/>
 
                 <RadioButton
-                    android:id="@+id/radio_option3"
+                    android:id="@+id/BuilderRadio"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/black"

@@ -15,9 +15,12 @@
         >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/redbox"
             >
             <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/backbtn"
                 android:layout_width="25dp"
                 android:layout_height="20dp"
                 android:layout_margin="15dp"
@@ -41,17 +44,16 @@
                 />
         </LinearLayout>
 
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_marginStart="10dp"
@@ -103,10 +105,9 @@
 
                         <!-- Spinner for selecting the unit (sqft, sqyrd, etc.) -->
                         <Spinner
-                            android:id="@+id/spinner_unit"
+                            android:id="@+id/unitvalues"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
                             android:layout_weight="1" />
 
                     </LinearLayout>
@@ -135,8 +136,7 @@
 
                         <!-- Spinner for selecting the unit (sqft, sqyrd, etc.) -->
                         <Spinner
-                            android:id="@+id/spinner_unit"
-                            android:layout_marginEnd="10dp"
+                            android:id="@+id/unitvalues1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1" />
@@ -181,8 +181,7 @@
 
                             <!-- Spinner for selecting the unit (sqft, sqyrd, etc.) -->
                             <Spinner
-                                android:id="@+id/spinner_unit"
-                                android:layout_marginEnd="10dp"
+                                android:id="@+id/unitvalues2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1" />
@@ -212,6 +211,7 @@
 
                             >
 
+
                             <RadioGroup
                                 android:id="@+id/radio_group_options"
                                 android:layout_width="match_parent"
@@ -224,24 +224,20 @@
 
                                 <RadioButton
                                     android:fontFamily="@font/celebes_reguler"
-                                    android:textSize="18sp"
-                                    android:paddingStart="10dp"
-                                    android:layout_marginTop="10dp"
-                                    android:id="@+id/Falt_Apartment"
+                                    android:textSize="16sp"
+                                    android:paddingStart="5dp"
                                     android:layout_width="wrap_content"
                                     android:textColor="@color/black"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="30dp"
                                     android:text="Yes" />
 
                                 <RadioButton
                                     android:fontFamily="@font/celebes_reguler"
-                                    android:textSize="18sp"
-                                    android:paddingStart="10dp"
-                                    android:layout_marginTop="10dp"
-                                    android:id="@+id/Falt_Apartment"
+                                    android:textSize="16sp"
+                                    android:paddingStart="5dp"
                                     android:layout_width="wrap_content"
                                     android:textColor="@color/black"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="30dp"
                                     android:text="No" />
 
 
@@ -287,8 +283,7 @@
 
                             <!-- Spinner for selecting the unit (sqft, sqyrd, etc.) -->
                             <Spinner
-                                android:id="@+id/spinner_unit"
-                                android:layout_marginEnd="10dp"
+                                android:id="@+id/unitvalues3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1" />
@@ -333,32 +328,28 @@
                     </LinearLayout>
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="30dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginBottom="30dp"
-                    android:gravity="bottom|end">
-
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/topiceaccept"
-                        android:layout_width="wrap_content"
-                        android:layout_height="35dp"
-                        android:background="@drawable/but_red"
-                        android:text="Contine"
-
-                        android:textSize="18sp"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:textAllCaps="false"
-                        android:textColor="@color/white" />
-
-                </LinearLayout>
 
 
 
 
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|end">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/topiceaccept"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/but_red"
+                android:text="Contine"
+                android:textSize="18sp"
+                android:fontFamily="@font/celebes_semi_bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
             </LinearLayout>
 
         </ScrollView>

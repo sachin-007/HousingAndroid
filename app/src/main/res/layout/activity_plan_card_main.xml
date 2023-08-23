@@ -8,633 +8,578 @@
     tools:context=".plan_card_main">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-        <ImageView
-            android:id="@+id/backimage"
-            android:layout_width="25dp"
-            android:layout_height="20dp"
-            android:layout_margin="15dp"
-            android:src="@drawable/icon_outline_arrow_left"
-            />
-    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_marginStart="10dp"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_outline_arrow_left"
+                />
+        </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
         >
 
-
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-        <LinearLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            >
-
-        <FrameLayout
-            android:layout_marginStart="40dp"
-            android:layout_width="wrap_content"
-
-            android:layout_height="match_parent"
-            >
-            <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:background="@color/white"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@android:color/white">
-
-
-
-
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="600dp"
-                android:layout_gravity="center"
-                android:background="#800080"
-                android:orientation="vertical"
-                android:paddingEnd="10dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                >
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/celebes_bold"
-                    android:gravity="center"
-                    android:text="Basic"
-                    android:textColor="@color/black"
-                    android:textSize="30sp" />
+                    android:layout_marginTop="30dp">
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/celebes_semi_bold"
-                    android:gravity="center"
-                    android:text="$3.8/mon"
-                    android:textColor="@color/black"
-                    android:textSize="22dp" />
+x
+
+                </FrameLayout>
 
 
-<!--                <androidx.appcompat.widget.AppCompatButton-->
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
 
-<!--                    android:id="@+id/choosebasic"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:layout_marginTop="20dp"-->
-<!--                    android:background="@drawable/bg_gradient"-->
-<!--                    android:fontFamily="@font/celebes_semi_bold"-->
-<!--                    android:gravity="center"-->
-<!--                    android:text="Choose Plan"-->
-<!--                    android:textColor="@color/white"-->
-<!--                    android:layout_marginStart="20dp"-->
-<!--                    android:layout_marginEnd="20dp"-->
-<!--                    android:textAllCaps="false" />-->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/celebes_reguler"
-                        android:gravity="center"
-                        android:text="Renews at $19.88/month"
-                        android:textColor="@color/black"
-                        android:textSize="16sp" />
-
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:layout_weight="1"
-                        android:gravity="end"
-                        android:text="View more"
-                        android:textColor="@color/black" />
-                </LinearLayout>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="#808080"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="4dp">
 
 
-
-                    <!--                    end sections-->
-
-                <LinearLayout
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
 
 
+                            <LinearLayout
+                                android:id="@+id/toplayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:background="#3498DB"
+                                android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/rightdone"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:padding="10dp"
-                        android:text="  feature one"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-                    <View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:fontFamily="@font/museosans_500"
+                                    android:gravity="center"
+                                    android:text="Dedicate Hosting"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/rightdone"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:padding="10dp"
-                        android:text="  feature one"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-                    <View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:gravity="center"
+                                    android:text="Starting At"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/rightdone"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:padding="10dp"
-                        android:text="  feature one"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-                    <View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/museosans_500"
+                                    android:gravity="center"
+                                    android:text="$50/mon"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:drawableStart="@drawable/rightdone"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:padding="10dp"
-                        android:text="  feature one"
-                        android:textColor="@color/black"
-                        android:textSize="18sp" />
-                    <View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-                </LinearLayout>
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/logo_id_plan"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="135dp"
+                            android:background="@drawable/plan_blue_background"
+                            android:padding="15dp"
+                            android:src="@drawable/profile" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="210dp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="35dp"
+                                android:background="@drawable/circle_logo_background"
+                                android:text="Order Now"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+                        <!-- The rest of your plan layout goes here -->
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="#808080"
+                        app:cardCornerRadius="12dp"
+                        app:cardElevation="4dp">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/white">
+
+
+                            <LinearLayout
+                                android:id="@+id/toplayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="170dp"
+                                android:background="#3498DB"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="30dp"
+                                    android:fontFamily="@font/museosans_500"
+                                    android:gravity="center"
+                                    android:text="Dedicate Hosting"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:gravity="center"
+                                    android:text="Starting At"
+                                    android:textColor="@color/white"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:fontFamily="@font/museosans_500"
+                                    android:gravity="center"
+                                    android:text="$50/mon"
+                                    android:textColor="@color/white"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/logo_id_plan"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="135dp"
+                            android:background="@drawable/plan_blue_background"
+                            android:padding="15dp"
+                            android:src="@drawable/profile" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="210dp"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/rightdone" />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="10dp"
+                                    android:fontFamily="@font/museosans_300"
+                                    android:text="Feature two"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp" />
+
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatButton
+                                android:id="@+id/button"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="35dp"
+                                android:background="@drawable/circle_logo_background"
+                                android:text="Order Now"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+                        <!-- The rest of your plan layout goes here -->
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </FrameLayout>
+
+
             </LinearLayout>
-            <!-- The rest of your plan layout goes here -->
-
-        </androidx.cardview.widget.CardView>
-
-        </FrameLayout>
-        <FrameLayout
-            android:layout_marginStart="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <androidx.cardview.widget.CardView
-
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:background="#808080"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="@android:color/white">
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="600dp"
-                    android:layout_gravity="center"
-                    android:background="@color/white"
-                    android:orientation="vertical"
-
-                    >
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/celebes_bold"
-                        android:gravity="center"
-                        android:text="Advance"
-                        android:textColor="@color/black"
-                        android:textSize="30sp" />
-
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:gravity="center"
-                        android:text="$9.8/mon"
-                        android:textColor="@color/black"
-                        android:textSize="22dp" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-
-                        android:id="@+id/chooseadvance"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_gradient"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:gravity="center"
-                        android:text="Choose Plan"
-                        android:textColor="@color/white"
-
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:textAllCaps="false" />
-
-                    <LinearLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/celebes_reguler"
-                            android:gravity="center"
-                            android:text="Renews at $19.88/month"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:layout_weight="1"
-                            android:gravity="end"
-                            android:text="View more"
-                            android:textColor="@color/black" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_marginTop="20dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-
-                        >
-
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                    </LinearLayout>
-                </LinearLayout>
-                <!-- The rest of your plan layout goes here -->
-
-            </androidx.cardview.widget.CardView>
-
-
-        </FrameLayout>
-        <FrameLayout
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:background="#808080"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="@android:color/white">
-
-                <LinearLayout
-                    android:layout_marginTop="10dp"
-
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:paddingStart="10dp"
-                    android:paddingEnd="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="600dp"
-                    android:layout_gravity="center"
-
-                    android:background="@color/white"
-                    android:orientation="vertical"
-
-                    >
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/celebes_bold"
-                        android:gravity="center"
-                        android:text="Ultra"
-                        android:textColor="@color/black"
-                        android:textSize="30sp" />
-
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:gravity="center"
-                        android:text="$12.8/mon"
-                        android:textColor="@color/black"
-                        android:textSize="22dp" />
-
-                    <androidx.appcompat.widget.AppCompatButton
-
-                        android:id="@+id/chooseultra"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:background="@drawable/bg_gradient"
-                        android:fontFamily="@font/celebes_semi_bold"
-                        android:gravity="center"
-                        android:text="Choose Plan"
-                        android:textColor="@color/white"
-
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:textAllCaps="false" />
-
-                    <LinearLayout
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:fontFamily="@font/celebes_reguler"
-                            android:gravity="center"
-                            android:text="Renews at $19.88/month"
-                            android:textColor="@color/black"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="20dp"
-                            android:layout_weight="1"
-                            android:gravity="end"
-                            android:text="View more"
-                            android:textColor="@color/black" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:paddingStart="10dp"
-                        android:paddingEnd="10dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-
-                        >
-
-
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" />
-                        <View
-                            android:layout_width="wrap_content"
-                            android:layout_height="1dp"
-                            android:background="@drawable/divider_line"
-                            />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" /><View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" /><View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" /><View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" /><View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" /><View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:drawableStart="@drawable/rightdone"
-                            android:fontFamily="@font/celebes_semi_bold"
-                            android:padding="10dp"
-                            android:text="  feature one"
-                            android:textColor="@color/black"
-                            android:textSize="18sp" /><View
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:background="@drawable/divider_line"
-                        />
-                    </LinearLayout>
-                </LinearLayout>
-                <!-- The rest of your plan layout goes here -->
-
-            </androidx.cardview.widget.CardView>
-
-        </FrameLayout>
-
-        </LinearLayout>
-    </HorizontalScrollView>
+        </HorizontalScrollView>
     </LinearLayout>
 
 </RelativeLayout>

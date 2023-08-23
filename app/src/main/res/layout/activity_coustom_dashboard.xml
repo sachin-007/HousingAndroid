@@ -1,0 +1,1558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CoustomDashboardActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#2E86C1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/primium" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:background="@drawable/payrent_background"
+                android:fontFamily="@font/urbanist_regular"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Pay Rent"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:src="@drawable/prof" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#2E86C1"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:text="Hi Sachin Searching in"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/celebes_semi_bold"
+                    android:textSize="14sp"
+                    android:text="Navi Mumbai"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:gravity="end"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35sp"
+                    android:gravity="center"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:background="@drawable/payrent_background"
+                    android:fontFamily="@font/celebes_semi_bold"
+                    android:textSize="16sp"
+                    android:text="+ post property"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:background="#2E86C1"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/payrent_background"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Buy"
+                    android:textColor="@color/white"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/payrent_background"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Rent"
+                    android:layout_marginEnd="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/payrent_background"
+                    android:fontFamily="@font/celebes_reguler"
+
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Commercial"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/payrent_background"
+                    android:fontFamily="@font/celebes_reguler"
+
+
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Buy"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:background="@drawable/payrent_background"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Commercial"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E86C1"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextText"
+                android:hint="Search"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/search_background"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="text"
+                android:drawableEnd="@drawable/searchb"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#3498DB"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:padding="10dp"
+                android:background="@drawable/bottom_layout_whitebackground"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/urbanist_regular"
+                    android:textSize="18sp"
+                    android:padding="5dp"
+                    android:text="Continue last search"
+                    android:textColor="@color/black" />
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="310dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        >
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_margin="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="230dp"
+                                            android:background="#808080"
+                                            app:cardCornerRadius="10dp"
+                                            app:cardElevation="4dp">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="230dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/building"/>
+                                        </androidx.cardview.widget.CardView>
+                                        <LinearLayout
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_width="290dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="10dp"
+
+                                            >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Span Elite"
+                                                android:fontFamily="@font/celebes_bold"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                />
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+                                                    android:src="@drawable/moreb"
+                                                    />
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="MKtd. by"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    android:textSize="14sp"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Span Structure"
+                                                    android:fontFamily="@font/celebes_semi_bold"
+                                                    android:textColor="#8a8a8a"
+                                                    android:textSize="14sp"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                >
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="1 RK, 1Bhk"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="&#46;"
+                                                    android:textStyle="bold"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Ulwe,NAvi Mumbai"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="15dp"
+                                                    android:src="@drawable/rupeeb"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="16sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="-"
+                                                    android:textSize="18sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="16sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="310dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        >
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_margin="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="230dp"
+                                            android:background="#808080"
+                                            app:cardCornerRadius="10dp"
+                                            app:cardElevation="4dp">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="230dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/building"/>
+                                        </androidx.cardview.widget.CardView>
+                                        <LinearLayout
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_width="290dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="10dp"
+
+                                            >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Span Elite"
+                                                android:fontFamily="@font/celebes_bold"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                />
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+                                                    android:src="@drawable/moreb"
+                                                    />
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="MKtd. by"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    android:textSize="14sp"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Span Structure"
+                                                    android:fontFamily="@font/celebes_semi_bold"
+                                                    android:textColor="#8a8a8a"
+                                                    android:textSize="14sp"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                >
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="1 RK, 1Bhk"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="&#46;"
+                                                    android:textStyle="bold"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Ulwe,NAvi Mumbai"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="15dp"
+                                                    android:src="@drawable/rupeeb"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="16sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="-"
+                                                    android:textSize="18sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="16sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                    <LinearLayout
+                                        android:layout_width="310dp"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical"
+                                        android:layout_marginTop="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginBottom="10dp"
+                                        >
+                                        <androidx.cardview.widget.CardView
+                                            android:layout_margin="10dp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="230dp"
+                                            android:background="#808080"
+                                            app:cardCornerRadius="10dp"
+                                            app:cardElevation="4dp">
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="230dp"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/building"/>
+                                        </androidx.cardview.widget.CardView>
+                                        <LinearLayout
+                                            android:layout_marginBottom="10dp"
+                                            android:layout_width="290dp"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginEnd="10dp"
+
+                                            >
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="Span Elite"
+                                                android:fontFamily="@font/celebes_bold"
+                                                android:textColor="@color/black"
+                                                android:textSize="16sp"
+                                                />
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="18dp"
+                                                    android:layout_height="18dp"
+                                                    android:src="@drawable/moreb"
+                                                    />
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="MKtd. by"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    android:textSize="14sp"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Span Structure"
+                                                    android:fontFamily="@font/celebes_semi_bold"
+                                                    android:textColor="#8a8a8a"
+                                                    android:textSize="14sp"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                >
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="1 RK, 1Bhk"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="&#46;"
+                                                    android:textStyle="bold"
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Ulwe,NAvi Mumbai"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textColor="#8a8a8a"
+                                                    />
+                                            </LinearLayout>
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="15dp"
+                                                    android:layout_height="15dp"
+                                                    android:src="@drawable/rupeeb"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="16sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="-"
+                                                    android:textSize="18sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="16sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+                                            </LinearLayout>
+
+
+                                        </LinearLayout>
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </HorizontalScrollView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <LinearLayout
+                                    android:layout_width="300dp"
+                                    android:layout_height="370dp"
+                                    >
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="40dp"
+                                        android:background="#808080"
+                                        app:cardCornerRadius="12dp"
+                                        app:cardElevation="4dp">
+
+                                        <FrameLayout
+                                            android:layout_width="310dp"
+                                            android:layout_height="match_parent"
+
+                                            >
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/building"
+                                                android:scaleType="fitXY"
+                                                />
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/semi_transparent" />
+                                            <LinearLayout
+                                                android:layout_marginTop="10dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+
+                                                <ImageView
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:src="@drawable/moreb"
+                                                    />
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Sai Raj Realty"
+                                                    android:textColor="@color/white"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textSize="16sp"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+
+                                                android:layout_marginStart="10dp"
+                                                android:layout_marginEnd="5dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="bottom"
+                                                android:orientation="vertical"
+                                                >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_marginBottom="5dp"
+                                                    >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center_vertical"
+                                                        >
+                                                        <ImageView
+                                                            android:layout_width="15dp"
+                                                            android:layout_height="15dp"
+                                                            android:src="@drawable/rupeew"
+                                                            />
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="40.61L"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+
+                                                        <TextView
+                                                            android:layout_marginStart="5dp"
+                                                            android:layout_marginEnd="5dp"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="-"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="40.61L"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Sarang Pilars Bellview"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="16sp"
+                                                        android:fontFamily="@font/celebes_semi_bold"
+                                                        />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_marginBottom="10dp"
+                                                    >
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Ulwe, Navi Mumbai"
+                                                        android:textSize="14sp"
+                                                        android:textColor="#CACACA"/>
+                                                    <TextView
+                                                        android:textSize="14sp"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="1, 2 BHK Flats"
+                                                        android:textColor="#CACACA"/>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </FrameLayout>
+
+                                    </androidx.cardview.widget.CardView>
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="40dp"
+                                        android:background="#808080"
+                                        app:cardCornerRadius="12dp"
+                                        app:cardElevation="4dp"
+                                        >
+
+                                        <FrameLayout
+                                            android:layout_width="310dp"
+                                            android:layout_height="match_parent"
+
+                                            >
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/building"
+                                                android:scaleType="fitXY"
+                                                />
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/semi_transparent" />
+                                            <LinearLayout
+                                                android:layout_marginTop="10dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+
+                                                <ImageView
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:src="@drawable/moreb"
+                                                    />
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Sai Raj Realty"
+                                                    android:textColor="@color/white"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textSize="16sp"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+
+                                                android:layout_marginStart="5dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="bottom"
+                                                android:orientation="vertical"
+                                                >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_marginBottom="5dp"
+                                                    >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center_vertical"
+                                                        >
+                                                        <ImageView
+                                                            android:layout_width="15dp"
+                                                            android:layout_height="15dp"
+                                                            android:src="@drawable/rupeew"
+                                                            />
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="40.61L"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+
+                                                        <TextView
+                                                            android:layout_marginStart="5dp"
+                                                            android:layout_marginEnd="5dp"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="-"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="40.61L"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Sarang Pilars Bellview"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="16sp"
+                                                        android:fontFamily="@font/celebes_semi_bold"
+                                                        />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_marginBottom="10dp"
+                                                    >
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Ulwe, Navi Mumbai"
+                                                        android:textSize="14sp"
+                                                        android:textColor="#CACACA"/>
+                                                    <TextView
+                                                        android:textSize="14sp"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="1, 2 BHK Flats"
+                                                        android:textColor="#CACACA"/>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </FrameLayout>
+
+                                    </androidx.cardview.widget.CardView>
+                                    <androidx.cardview.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginStart="10dp"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginTop="15dp"
+                                        android:layout_marginBottom="40dp"
+                                        android:background="#808080"
+                                        app:cardCornerRadius="12dp"
+                                        app:cardElevation="4dp">
+
+                                        <FrameLayout
+                                            android:layout_width="310dp"
+                                            android:layout_height="match_parent"
+
+                                            >
+                                            <ImageView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:src="@drawable/building"
+                                                android:scaleType="fitXY"
+                                                />
+                                            <View
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:background="@color/semi_transparent" />
+                                            <LinearLayout
+                                                android:layout_marginTop="10dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+
+                                                <ImageView
+                                                    android:layout_marginStart="10dp"
+                                                    android:layout_width="40dp"
+                                                    android:layout_height="40dp"
+                                                    android:src="@drawable/moreb"
+                                                    />
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="Sai Raj Realty"
+                                                    android:textColor="@color/white"
+                                                    android:fontFamily="@font/celebes_reguler"
+                                                    android:textSize="16sp"/>
+                                            </LinearLayout>
+                                            <LinearLayout
+
+                                                android:layout_marginStart="15dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="match_parent"
+                                                android:gravity="bottom"
+                                                android:orientation="vertical"
+                                                >
+
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_marginBottom="5dp"
+                                                    >
+
+                                                    <LinearLayout
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:gravity="center_vertical"
+                                                        >
+                                                        <ImageView
+                                                            android:layout_width="15dp"
+                                                            android:layout_height="15dp"
+                                                            android:src="@drawable/rupeew"
+                                                            />
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="40.61L"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+
+                                                        <TextView
+                                                            android:layout_marginStart="5dp"
+                                                            android:layout_marginEnd="5dp"
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="-"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+
+                                                        <TextView
+                                                            android:layout_width="wrap_content"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="40.61L"
+                                                            android:textSize="16sp"
+                                                            android:fontFamily="@font/celebes_bold"
+                                                            android:textColor="@color/white"/>
+                                                    </LinearLayout>
+
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Sarang Pilars Bellview"
+                                                        android:textColor="@color/white"
+                                                        android:textSize="16sp"
+                                                        android:fontFamily="@font/celebes_semi_bold"
+                                                        />
+                                                </LinearLayout>
+                                                <LinearLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:orientation="vertical"
+                                                    android:layout_marginBottom="10dp"
+                                                    >
+                                                    <TextView
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="Ulwe, Navi Mumbai"
+                                                        android:textSize="14sp"
+                                                        android:textColor="#CACACA"/>
+                                                    <TextView
+                                                        android:textSize="14sp"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:text="1, 2 BHK Flats"
+                                                        android:textColor="#CACACA"/>
+
+                                                </LinearLayout>
+
+                                            </LinearLayout>
+                                        </FrameLayout>
+
+                                    </androidx.cardview.widget.CardView>
+
+                                </LinearLayout>
+
+                            </HorizontalScrollView>
+                        </LinearLayout>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="130dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#808080"
+                                    app:cardCornerRadius="12dp"
+                                    app:cardElevation="4dp"
+
+                                    >
+
+                                    <FrameLayout
+                                        android:layout_width="310dp"
+                                        android:layout_height="match_parent"
+
+                                        >
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/building"
+                                            android:scaleType="fitXY"
+                                            />
+                                    </FrameLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        >
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sai Raj Realty"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:textSize="14sp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom"
+                                        android:orientation="vertical"
+                                        >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginBottom="5dp"
+                                            >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:src="@drawable/rupeeb"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="-"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Sarang Pilars Bellview"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:fontFamily="@font/celebes_semi_bold"
+                                                />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Ulwe, Navi Mumbai"
+                                                android:textSize="12sp"
+                                                android:textColor="#8a8a8a"/>
+                                            <TextView
+                                                android:textSize="12sp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1, 2 BHK Flats"
+                                                android:textColor="#8a8a8a"/>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="130dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#808080"
+                                    app:cardCornerRadius="12dp"
+                                    app:cardElevation="4dp"
+
+                                    >
+
+                                    <FrameLayout
+                                        android:layout_width="310dp"
+                                        android:layout_height="match_parent"
+
+                                        >
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/building"
+                                            android:scaleType="fitXY"
+                                            />
+
+                                    </FrameLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        >
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sai Raj Realty"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:textSize="14sp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom"
+                                        android:orientation="vertical"
+                                        >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginBottom="5dp"
+                                            >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:src="@drawable/rupeeb"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="-"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Sarang Pilars Bellview"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:fontFamily="@font/celebes_semi_bold"
+                                                />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Ulwe, Navi Mumbai"
+                                                android:textSize="12sp"
+                                                android:textColor="#8a8a8a"/>
+                                            <TextView
+                                                android:textSize="12sp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1, 2 BHK Flats"
+                                                android:textColor="#8a8a8a"/>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="130dp"
+                                    android:layout_height="125dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:background="#808080"
+                                    app:cardCornerRadius="12dp"
+                                    app:cardElevation="4dp"
+
+                                    >
+
+                                    <FrameLayout
+                                        android:layout_width="310dp"
+                                        android:layout_height="match_parent"
+
+                                        >
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:src="@drawable/building"
+                                            android:scaleType="fitXY"
+                                            />
+
+                                    </FrameLayout>
+
+
+                                </androidx.cardview.widget.CardView>
+                                <LinearLayout
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_vertical"
+                                        >
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="Sai Raj Realty"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:textSize="14sp"/>
+                                    </LinearLayout>
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="bottom"
+                                        android:orientation="vertical"
+                                        >
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical"
+                                            android:layout_marginBottom="5dp"
+                                            >
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center_vertical"
+                                                >
+                                                <ImageView
+                                                    android:layout_width="10dp"
+                                                    android:layout_height="10dp"
+                                                    android:src="@drawable/rupeeb"
+                                                    />
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_marginStart="5dp"
+                                                    android:layout_marginEnd="5dp"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="-"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+
+                                                <TextView
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:text="40.61L"
+                                                    android:textSize="14sp"
+                                                    android:fontFamily="@font/celebes_bold"
+                                                    android:textColor="@color/black"/>
+                                            </LinearLayout>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Sarang Pilars Bellview"
+                                                android:textColor="@color/black"
+                                                android:textSize="14sp"
+                                                android:fontFamily="@font/celebes_semi_bold"
+                                                />
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical"
+                                            >
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Ulwe, Navi Mumbai"
+                                                android:textSize="12sp"
+                                                android:textColor="#8a8a8a"/>
+                                            <TextView
+                                                android:textSize="12sp"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="1, 2 BHK Flats"
+                                                android:textColor="#8a8a8a"/>
+
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+                    </ScrollView>
+
+
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

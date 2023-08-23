@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".postform">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/redbox"
+            >
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/backbtn"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/icon_outline_arrow_left"
+                />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post Your Property"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:fontFamily="@font/urbanist_bold"
+                    />
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:text="I am" />
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="Owner"
+                                />
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+
+                                android:gravity="center"
+
+                                android:textColor="@color/black"
+
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="Agent/broker"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+
+
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_height="55dp"
+
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="builder"
+                                />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:text="Location" />
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           >
+                           <EditText
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:hint="enter city name"
+                               android:textSize="16sp"
+                               android:textColor="@color/black"
+
+                               />
+                       </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:text="Property type" />
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/residentialbtn"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="Recidential"
+                                />
+                            <TextView
+                                android:id="@+id/commercialbtn"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+
+                                android:gravity="center"
+
+                                android:textColor="@color/black"
+
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="commercial"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible"
+                            android:id="@+id/commerciallayout"
+                            >
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="14dp">
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:background="@drawable/whitebox"
+                                    >
+                                    <TextView
+                                        android:drawableTop="@drawable/jogging"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textSize="12sp"
+                                        android:fontFamily="@font/celebes_semi_bold"
+                                        android:text="Apartment" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/whitebox"
+                                    >
+
+                                    <TextView
+                                        android:drawableTop="@drawable/banquethall"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textSize="12sp"
+                                        android:fontFamily="@font/celebes_semi_bold"
+                                        android:text="Independent Floor" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/whitebox"
+                                    >
+                                    <TextView
+                                        android:drawableTop="@drawable/phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:textSize="12sp"
+                                        android:fontFamily="@font/celebes_semi_bold"
+                                        android:text="Independent House" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="80dp"
+                                    android:orientation="vertical"
+                                    android:gravity="center"
+                                    android:layout_marginStart="10dp"
+                                    android:background="@drawable/whitebox"
+                                    >
+                                    <TextView
+                                        android:drawableTop="@drawable/parking"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="50dp"
+                                        android:gravity="center"
+                                        android:textSize="12sp"
+                                        android:fontFamily="@font/celebes_semi_bold"
+                                        android:text="Villa" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                        </LinearLayout>
+
+                        <EditText
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Building/Projext/Society"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/celebes_reguler"
+                            />
+
+                        <EditText
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Locality"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/celebes_reguler"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Unit Details"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:text="No. of Flats in Project/Society" />
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="&lt;50"
+                                />
+                            <TextView
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="55dp"
+
+                                android:gravity="center"
+
+                                android:textColor="@color/black"
+
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="50-100"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginStart="5dp"
+                                />
+
+
+
+                            <TextView
+                                android:layout_marginStart="5dp"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_marginEnd="10dp"
+                                android:layout_height="55dp"
+
+                                android:textColor="@color/black"
+
+                                android:gravity="center"
+                                android:textSize="12sp"
+                                android:background="@drawable/whitebox"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="&gt;100"
+                                />
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+
+                                android:textSize="16sp"
+
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:text="Bedroom" />
+
+                            <HorizontalScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <LinearLayout
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:text="1 RK" />
+                                    <TextView
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:text="1 BHK" />
+
+                                    <TextView
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="2 BHK" />
+
+                                    <TextView
+
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="3 BHK" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="4dp"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:text="4 BHK" />
+
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="5 BHK" />
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="6 BHK" />
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="7 BHK" />
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="8 BHK" />
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="9 BHK" />
+                                    <TextView
+                                        android:layout_width="80dp"
+                                        android:layout_height="70dp"
+                                        android:layout_marginStart="5dp"
+                                        android:layout_marginEnd="5dp"
+                                        android:layout_weight="1"
+                                        android:textColor="@color/black"
+                                        android:fontFamily="@font/celebes_reguler"
+
+                                        android:background="@drawable/whiteboxgreaybg"
+                                        android:gravity="center"
+                                        android:padding="5dp"
+                                        android:text="10 BHK" />
+
+                                </LinearLayout>
+                            </HorizontalScrollView>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+
+                                    android:fontFamily="@font/celebes_reguler"
+                                    android:text="Bathroom"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp"
+                                    />
+
+                                <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <LinearLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="0" />
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="2" />
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="4dp"
+                                            android:text="3" />
+
+
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="4" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="5" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="6" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="7" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="8" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="9" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="10" />
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="16sp"
+
+                                    android:fontFamily="@font/celebes_reguler"
+                                    android:textColor="@color/black"
+                                    android:text="Bolcony(optional)" />
+                                <HorizontalScrollView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    >
+                                    <LinearLayout
+                                        android:layout_marginTop="5dp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content">
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:gravity="center"
+                                            android:text="0" />
+
+                                        <TextView
+
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="1" />
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="2" />
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+
+                                            android:gravity="center"
+                                            android:padding="4dp"
+                                            android:text="3" />
+
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="4" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="5" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="6" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="7" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="8" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="9" />
+                                        <TextView
+                                            android:layout_width="80dp"
+                                            android:layout_height="55dp"
+
+                                            android:layout_marginStart="5dp"
+                                            android:layout_marginEnd="5dp"
+                                            android:background="@drawable/whitebox"
+                                            android:textColor="@color/black"
+                                            android:fontFamily="@font/celebes_reguler"
+                                            android:gravity="center"
+                                            android:padding="5dp"
+                                            android:text="10" />
+                                    </LinearLayout>
+                                </HorizontalScrollView>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:fontFamily="@font/celebes_semi_bold"
+                                        android:text="Property Area"
+
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:textSize="18sp"
+                                        android:textColor="#808080"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/celebes_semi_bold"
+                                        android:text="Provide either Carpet Area or Super Area"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:orientation="horizontal">
+
+                                    <!-- EditText for entering the square foot value -->
+                                    <EditText
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/edit_text_square_foot"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="16sp"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:layout_weight="1"
+                                        android:hint="Carpet Area"
+
+                                        android:layout_marginRight="10dp"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1" />
+
+                                    <!-- Spinner for selecting the unit (sqft, sqyrd, etc.) -->
+                                    <Spinner
+                                        android:id="@+id/unitvalues"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="10dp"
+                                        />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="10dp"
+                                    android:layout_marginTop="5dp"
+
+                                    android:orientation="horizontal">
+
+                                    <!-- EditText for entering the square foot value -->
+                                    <EditText
+                                        android:layout_marginTop="10dp"
+                                        android:id="@+id/edit_text_square_foot"
+                                        android:layout_width="match_parent"
+                                        android:layout_marginLeft="10dp"
+                                        android:textSize="16sp"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/black"
+                                        android:layout_weight="1"
+                                        android:hint="Super Area"
+                                        android:layout_marginRight="10dp"
+                                        android:inputType="numberDecimal"
+                                        android:maxLines="1" />
+
+                                    <!-- Spinner for selecting the unit (sqft, sqyrd, etc.) -->
+                                    <Spinner
+                                        android:id="@+id/unitvalues1"
+                                        android:layout_width="115dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="10dp"
+                                        />
+
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:text="Floor Details"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <EditText
+
+                            android:textSize="16sp"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Total Number of Floors in House"
+                            android:text=""
+                            android:textColorHint="#808080"
+                            android:textColor="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:text="Furnishing"
+                            android:textColor="@color/black"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:background="@drawable/whitebox"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:text="Fully Furnished"
+                            />
+                        <TextView
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+
+                            android:gravity="center"
+
+                            android:textColor="@color/black"
+
+                            android:textSize="12sp"
+                            android:background="@drawable/whitebox"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:text="Semi Furnished"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="5dp"
+                            />
+
+
+
+                        <TextView
+                            android:layout_marginStart="5dp"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:layout_height="55dp"
+
+                            android:textColor="@color/black"
+
+                            android:gravity="center"
+                            android:textSize="12sp"
+                            android:background="@drawable/whitebox"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:text="Unfurnished"
+                            />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|end">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/topiceaccept"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/but_red"
+                        android:text="Contine"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

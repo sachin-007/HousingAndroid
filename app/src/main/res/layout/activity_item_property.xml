@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".item_property">
+
+
+        <LinearLayout
+            android:id="@+id/initallayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+<!--            <androidx.cardview.widget.CardView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="#FFFF"-->
+<!--                app:cardCornerRadius="10dp"-->
+<!--                app:cardElevation="4dp">-->
+
+            <LinearLayout
+                android:background="@color/cardview_shadow_end_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/propertyimageview"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitXY"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:src="@drawable/original_image1"/>
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹ "
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:id="@+id/priceTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" onword"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:id="@+id/sellerNameTextView"
+                                android:maxLength="5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:textColor="#808080"
+                                android:fontFamily="@font/celebes_reguler"
+
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" by "
+                                android:textColor="#808080"
+                                android:fontFamily="@font/celebes_reguler"
+
+                                android:textSize="16sp"/>
+                            <TextView
+                                android:maxLength="5"
+                                android:id="@+id/propertyByNameTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" "
+                                android:textColor="#808080"
+                                android:fontFamily="@font/celebes_reguler"
+
+                                android:textSize="16sp"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginTop="2dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:layout_width="17dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="17dp"
+                                android:src="@drawable/location"
+                                />
+                            <TextView
+                                android:id="@+id/locationTextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="india"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                android:layout_gravity="center_vertical"
+                                />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="10dp"
+                            android:gravity="bottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Facilities "
+                                android:textSize="12sp"
+                                android:textColor="#808080"
+                                android:fontFamily="@font/celebes_reguler"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/wifi"
+                                android:padding="1dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/airconditioner"
+                                android:padding="1dp"
+                                />
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:padding="1dp"
+                                android:src="@drawable/cookefood"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=" +11 More"
+                                android:textSize="12sp"
+                                android:textColor="#808080"
+                                android:fontFamily="@font/celebes_reguler"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+                <View
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="10dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Twin Sharing with AC"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:textSize="16sp"
+                            android:textColor="#808080"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                />
+
+                            <TextView
+
+                                android:id="@+id/twinSharePriceTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Triple Sharing With AC"
+                            android:fontFamily="@font/celebes_reguler"
+                            android:textSize="16sp"
+                            android:textColor="#808080"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="₹"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="16sp"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:id="@+id/tripleSharePriceTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"
+
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:src="@drawable/verification"
+                        android:layout_marginStart="15dp"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Centrally Located PG Near NIRLON with No Brokerage,2..."
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/celebes_reguler"
+                        android:textColor="#808080"
+                        android:layout_marginStart="15dp"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+<!--            </androidx.cardview.widget.CardView>-->
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Get Phone No."
+                    android:layout_weight="1"
+                    android:background="@drawable/but_pinkred"
+                    android:fontFamily="@font/celebes_semi_bold"
+                    android:textColor="#FF0000"
+
+                    android:textAllCaps="false"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:fontFamily="@font/celebes_semi_bold"
+                    android:layout_weight="1"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Contact Owner"
+                    android:background="@drawable/but_redwhite"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/initallayout"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+
+</RelativeLayout>

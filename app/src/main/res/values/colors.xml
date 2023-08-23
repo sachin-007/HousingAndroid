@@ -4,5 +4,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="Dark3">#FF000000</color>
     <color name="btnoutline">#CF9FFF</color>
+    <color name="semi_transparent">#66000000</color>
+    <color name="Dark1">#181A20</color>
+    <color name="Dark2">#1F222A</color>
+    <color name="greay2">#464646</color>
+    <color name="greay1">#8a8a8a</color>
+    <color name="error">#F75555</color>
 
 </resources>

@@ -7,46 +7,46 @@
     android:layout_height="match_parent"
     tools:context=".activity_sub9">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
+            android:layout_height="wrap_content"
             >
-            <LinearLayout
-                android:layout_width="match_parent"
+
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                >
+                android:layout_margin="15dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/icon_outline_arrow_left" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="15dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="15dp"
-                    android:layout_marginBottom="15dp"
-                    android:src="@drawable/icon_outline_arrow_left" />
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
+            >
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
-                >
-
-                <TextView
-                    android:layout_marginStart="20dp"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="More details to get relevent buyers"
-                    android:textSize="30sp"
-                    android:fontFamily="@font/urbanist_bold"
-                    />
-            </LinearLayout>
-            <ScrollView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
+                android:text="More details to get relevent buyers"
+                android:textSize="30sp"
+                android:fontFamily="@font/urbanist_bold"
+                />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,157 +55,151 @@
                 >
 
 
-            <LinearLayout
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Lock-in Period in years (optional)"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/celebes_semi_bold"
-                    android:layout_marginBottom="5dp"
-                    />
-
-            </LinearLayout>
-            <EditText
-
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Lock-in period time in years"
-                android:fontFamily="@font/celebes_reguler"
-                android:inputType="number"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                />
-
-
-            <LinearLayout
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Floor Details"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginStart="15dp"
-                    android:fontFamily="@font/celebes_semi_bold"
-                    android:layout_marginBottom="5dp"
-                    />
-
-            </LinearLayout>
-
-
-            <EditText
-                android:layout_marginTop="10dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Total number of Floors"
-                android:fontFamily="@font/celebes_reguler"
-                android:inputType="number"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                />
-            <EditText
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Floor No. of your property"
-                android:fontFamily="@font/celebes_reguler"
-                android:inputType="number"
-                android:textSize="18sp"
-                android:textColor="@color/black"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="10dp"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                >
-
-                <TextView
-                    android:layout_marginStart="20dp"
-
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/celebes_semi_bold"
-                    android:text="Furnishing"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginStart="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-
-                >
-
-                <RadioGroup
-                    android:id="@+id/radio_group_options"
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <!-- Three RadioButtons representing your options -->
-
-
-
-                    <RadioButton
-                        android:fontFamily="@font/celebes_reguler"
-                        android:textSize="18sp"
-                        android:paddingStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/Falt_Apartment"
+                    >
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Unfurnished" />
+                        android:text="Lock-in Period in years (optional)"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:layout_marginBottom="5dp"
+                        />
 
-                    <RadioButton
-                        android:fontFamily="@font/celebes_reguler"
-                        android:textSize="18sp"
-                        android:paddingStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/Falt_Apartment"
+                </LinearLayout>
+                <EditText
+
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lock-in period time in years"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Semi-Furnished" />
+                        android:text="Floor Details"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:layout_marginBottom="5dp"
+                        />
 
-                    <RadioButton
-                        android:fontFamily="@font/celebes_reguler"
-                        android:textSize="18sp"
-                        android:paddingStart="10dp"
-                        android:layout_marginTop="10dp"
-                        android:id="@+id/Falt_Apartment"
+                </LinearLayout>
+
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Total number of Floors"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    />
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Floor No. of your property"
+                    android:fontFamily="@font/celebes_reguler"
+                    android:inputType="number"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+
                         android:layout_width="wrap_content"
-                        android:textColor="@color/black"
                         android:layout_height="wrap_content"
-                        android:text="Fully-Furnished" />
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:text="Furnishing"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
 
-                </RadioGroup>
-            </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+
+                    >
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_options"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!-- Three RadioButtons representing your options -->
+
+
+
+                        <RadioButton
+                            android:fontFamily="@font/celebes_reguler"
+                            android:textSize="16sp"
+                            android:paddingStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_height="30dp"
+                            android:text="Unfurnished" />
+
+                        <RadioButton
+                            android:fontFamily="@font/celebes_reguler"
+                            android:textSize="16sp"
+                            android:paddingStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_height="30dp"
+                            android:text="Semi-Furnished" />
+
+                        <RadioButton
+                            android:fontFamily="@font/celebes_reguler"
+                            android:textSize="16sp"
+                            android:paddingStart="5dp"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_height="30dp"
+                            android:text="Fully-Furnished" />
+
+                    </RadioGroup>
+                </LinearLayout>
                 <LinearLayout
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
@@ -221,7 +215,7 @@
                         android:layout_marginBottom="5dp"
                         android:fontFamily="@font/celebes_semi_bold"
                         android:text="Property Area"
-                         android:layout_marginStart="15dp"
+                        android:layout_marginStart="15dp"
                         android:textColor="@color/black"
                         android:textSize="18sp" />
 
@@ -302,33 +296,33 @@
                 </LinearLayout>
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="30dp"
-                android:gravity="bottom|end">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="30dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="bottom|end">
 
-                <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/topiceaccept"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:background="@drawable/but_red"
-                    android:text="Contine"
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/topiceaccept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:background="@drawable/but_red"
+                        android:text="Contine"
 
-                    android:textSize="18sp"
-                    android:fontFamily="@font/celebes_semi_bold"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white" />
+                        android:textSize="18sp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
 
             </LinearLayout>
-
-            </LinearLayout>
-            </ScrollView>
+        </ScrollView>
 
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </RelativeLayout>
+</RelativeLayout>

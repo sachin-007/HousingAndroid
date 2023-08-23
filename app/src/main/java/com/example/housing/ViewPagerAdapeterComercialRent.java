@@ -34,9 +34,9 @@ public class ViewPagerAdapeterComercialRent extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
 
         if (position==1){
-            return "Commercial";
-        }else {
             return "Residential";
+        }else {
+            return "Commercial";
         }
     }
 }

@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAllCaps="false"
-                android:text="Residential"
+                android:text="Comercial"
                 android:background="@drawable/btn_background"
                 android:textColor="@color/black"
                 />
@@ -61,7 +61,7 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="commercial"
+                android:text="Residential"
                 android:layout_margin="10dp"
                 android:textColor="@color/black"
                 android:background="@drawable/btn_background"

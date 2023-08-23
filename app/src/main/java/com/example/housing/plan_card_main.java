@@ -22,42 +22,42 @@ public class plan_card_main extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plan_card_main);
-        backimg=findViewById(R.id.backimage);
+//        backimg=findViewById(R.id.backimage);
 
 
 //        choosebasic=findViewById(R.id.choosebasic);
-        chooseadvance=findViewById(R.id.chooseadvance);
-        chooseaultra=findViewById(R.id.chooseultra);
+//        chooseadvance=findViewById(R.id.chooseadvance);
+//        chooseaultra=findViewById(R.id.chooseultra);
 
 
-        choosebasic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(plan_card_main.this,AddOnPlan.class);
-                startActivity(intent);
-            }
-        });
-        chooseadvance.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(plan_card_main.this,AddOnPlan.class);
-                startActivity(intent);
-            }
-        });
-        chooseaultra.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(plan_card_main.this,AddOnPlan.class);
-                startActivity(intent);
-            }
-        });
-
-        backimg.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(plan_card_main.this,HomeDashboard.class);
-                startActivity(intent);
-            }
-        });
+//        choosebasic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(plan_card_main.this,AddOnPlan.class);
+//                startActivity(intent);
+//            }
+//        });
+//        chooseadvance.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(plan_card_main.this,AddOnPlan.class);
+//                startActivity(intent);
+//            }
+//        });
+//        chooseaultra.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(plan_card_main.this,AddOnPlan.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        backimg.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(plan_card_main.this,HomeDashboard.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }

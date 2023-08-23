@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detail_page"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icon_outline_arrow_left"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="end"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/like"/>
+                <ImageView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/share"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <!--    section 1    -->
+
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <ImageView
+                            android:id="@+id/thumbnelid"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/building"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        >
+                        <TextView
+                            android:id="@+id/buildingname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Kalpataru Hights"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/urbanist_bold"
+                            android:textColor="@color/black"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:layout_marginEnd="15dp"
+                            >
+
+                            <ImageView
+                                android:layout_width="15dp"
+                                android:layout_height="12dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/righttik" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:text="Verified"
+                                android:layout_marginStart="3dp"
+                                android:textColor="#2AB62F"
+                                android:fontFamily="@font/urbanist_bold"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                            android:id="@+id/priceofflat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="₹9.15 Cr"
+                            android:fontFamily="@font/urbanist_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | "
+                            android:fontFamily="@font/urbanist_semi_bold"
+                            android:textSize="14sp"
+
+                            android:textColor="@color/greay1"
+                            />
+                        <TextView
+                            android:id="@+id/flatof"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4BHK Flat"
+                            android:fontFamily="@font/urbanist_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posted on Aug 05,23"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/greay1"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:id="@+id/propertyByName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="By Kalpatatu Ltd."
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/greay1"
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/location" />
+
+                        <TextView
+                            android:id="@+id/propertylocation"
+                            android:layout_width="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:text="Newly Constructed Property"
+                            android:textColor="@color/greay1"
+                            android:fontFamily="@font/urbanist_semi_bold"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agent"
+                        android:fontFamily="@font/urbanist_bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/certified"
+                            />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_marginEnd="15dp"
+                        android:gravity="end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="Certified Agent"
+                        android:textColor="@color/Dark2"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="3dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/agentname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hitesh Mehta Mehta"
+                        android:fontFamily="@font/urbanist_semi_bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/agentnumber"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="91XXXXXXXX"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/urbanist_semi_bold"
+                        android:textSize="13sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_rectangle_red_border_button_background"
+                        android:text="Get Phone No."
+                        android:layout_marginEnd="10dp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:textAllCaps="false"
+                        android:textColor="#FF0000"/>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/reactanglered"
+                        android:text="Call Now"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="30dp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"/>
+
+
+                </LinearLayout>
+
+                <!--        section 2    -->
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="About Us"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/urbanist_bold"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Looking for Apartment in Ulwe,Navi Mumbai? Geo Bhaveshwar Feather is a Project by Geo Enterprises. The Project is offering 1 BHK. It is se...."
+                        android:fontFamily="@font/celebes_reguler"
+                        android:textSize="12sp"
+                        android:textColor="@color/greay1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TextView
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:text="Read more"
+                        android:textColor="#E61111"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/urbanist_bold"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+
+
+                <LinearLayout
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="26 Amenities"
+                            android:fontFamily="@font/urbanist_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="14dp">
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+                                    android:drawableTop="@drawable/jogging"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Jogging and Strolling Track" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+
+                                <TextView
+                                    android:drawableTop="@drawable/banquethall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Banquet Hall" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+                                    android:drawableTop="@drawable/phone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Intercom Facilities" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+                                    android:drawableTop="@drawable/parking"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="visitor packing" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+                                    android:drawableTop="@drawable/meditation"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Meditation Area" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+
+                                    android:drawableTop="@drawable/dustbin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Waste Disposal" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+                                    android:drawableTop="@drawable/cctv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="CCTV Camera" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+                                <TextView
+                                    android:drawableTop="@drawable/harvesting"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Rain water Harvesting" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+
+                                <TextView
+                                    android:drawableTop="@drawable/gym"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Gymnasium" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_marginStart="10dp"
+                                android:background="@drawable/whitebox"
+                                >
+
+                                <TextView
+                                    android:drawableTop="@drawable/home"
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:gravity="center"
+                                    android:textSize="12sp"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:text="Sequiry" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+                <View
+                    android:layout_height="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+
+
+                <!--        section 3   -->
+
+                <LinearLayout
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Depossite Amount"
+                                android:textColor="@color/greay1"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="14dp"
+                                />
+                            <TextView
+                                android:id="@+id/depossiteprice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:text="₹13,000"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Maintenance"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:layout_marginTop="5dp"
+                                android:textSize="14sp"
+
+                                />
+                            <TextView
+                                android:id="@+id/maintenancetype"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Included"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Depossite Amount"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:id="@+id/depossitedprice"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:layout_marginTop="5dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:text="Goregoan West, Mumbai"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Socity"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+
+                                />
+                            <TextView
+                                android:id="@+id/socitylocation"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Kalpataru Radiance"
+                                android:layout_marginTop="5dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textColor="@color/Dark1"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Location"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:text="2Bed, 2Bath, 1Balconay"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Status"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+
+                                />
+                            <TextView
+                                android:id="@+id/relocatestatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Ready to Move"
+                                android:layout_marginTop="5dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Project Area"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:id="@+id/projectarea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:text="0.29 Acres"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_marginTop="20dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Rara ID"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+
+                                />
+                            <TextView
+                                android:id="@+id/raraid"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="P520000502332"
+                                android:layout_marginTop="5dp"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textColor="@color/black"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Size, Units &amp; Configurations"
+                            android:textColor="@color/greay1"
+                            android:fontFamily="@font/urbanist_semi_bold"
+                            android:textSize="14sp"
+                            />
+                        <TextView
+                            android:id="@+id/sizeunit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:layout_marginTop="5dp"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:text="253 sq.ft. -343 sq.ft. 59 Units 1BHk"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="See Floor Plan"
+                            android:textColor="#E61111"
+                            android:fontFamily="@font/urbanist_semi_bold"
+                            android:layout_marginTop="20dp"
+                            android:textSize="14sp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Still want to Know more?"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:textSize="15sp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="150dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/white_rectangle_red_border_button_background"
+                        android:text="Enquire Now"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/celebes_semi_bold"
+                        android:textAllCaps="false"
+                        android:textColor="#FF0000"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Highlites / Specification"
+                            android:fontFamily="@font/urbanist_bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Living or dining"
+                                android:textColor="@color/greay1"
+                                android:layout_marginTop="14dp"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Vitrified Tiles"
+                                android:textColor="@color/greay2"
+                                android:layout_marginTop="14dp"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Master bedroom"
+                                android:textColor="@color/greay1"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Best Quality Vitrified Tiles"
+                                android:textColor="@color/greay2"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Other bedroom"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="2-0x2-0 vitrified tiles"
+                                android:textColor="@color/greay2"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Kitchen"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Floor Vitrified tiles"
+                                android:textColor="@color/greay2"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Load more intriors"
+                            android:textColor="@color/greay2"
+                            android:fontFamily="@font/urbanist_semi_bold"
+                            android:textSize="14sp"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            >
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="15dp"
+                                android:src="@drawable/dropdownarrow"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Price Trends in Mulund west"
+                        android:fontFamily="@font/urbanist_bold"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/divider_line" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/googlemap"/>
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="14dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp">
+                            <ImageView
+                                android:scaleType="fitXY"
+                                android:layout_width="100dp"
+                                android:layout_height="140dp"
+                                android:src="@drawable/busincard"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="About Builder"
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:id="@+id/buildername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hitesh Mehta Mehta"
+                                android:fontFamily="@font/urbanist_semi_bold"
+                                android:textSize="13sp"
+                                android:textColor="@color/black"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="General Manager"
+                                android:textSize="13sp"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textColor="@color/black"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="By "
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/celebes_semi_bold"
+                                android:textSize="14sp"
+                                />
+                                <TextView
+                                    android:id="@+id/propertyby"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Kalpatatu Ltd."
+                                    android:textColor="@color/greay1"
+                                    android:fontFamily="@font/celebes_semi_bold"
+                                    android:textSize="14sp"
+                                    />
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Looking for Apartment in Ulwe,Navi Mumbai? Geo Bhaveshwar Feather is a Project by Geo Enterprises."
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:textSize="14sp"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Read more...."
+                                android:textColor="@color/greay1"
+                                android:fontFamily="@font/celebes_reguler"
+                                android:textSize="14sp"
+                                />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/white_rectangle_red_border_button_background"
+                            android:text="share"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:textAllCaps="false"
+                            android:textColor="#FF0000"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/white_rectangle_red_border_button_background"
+                            android:text="Inquire"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:textAllCaps="false"
+                            android:textColor="#FF0000"/>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@drawable/reactanglered"
+                            android:text="Call"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/celebes_semi_bold"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,17 +17,42 @@
         android:theme="@style/Theme.Housing"
         tools:targetApi="31">
         <activity
-            android:name=".cardveiwtemp"
-            android:exported="false" />
-        <activity
-            android:name=".AddonActivity"
-            android:exported="true">
+            android:name=".postform"
+            android:exported="true" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".detail_page"
+            android:exported="false"></activity>
+        <activity
+            android:name=".item_property"
+            android:exported="false"></activity>
+        <activity
+            android:name=".housing_listing"
+            android:exported="false" />
+        <activity
+            android:name=".CoustomDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Housing_main_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard_home"
+            android:exported="false" />
+        <activity
+            android:name=".plan_activity"
+            android:exported="false" />
+        <activity
+            android:name=".cardveiwtemp"
+            android:exported="false" />
+        <activity
+            android:name=".AddonActivity"
+            android:exported="false" />
         <activity
             android:name=".MainTabFragment"
             android:exported="false" />
@@ -86,7 +115,9 @@
             android:exported="false" />
         <activity
             android:name=".activity_sub6"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
         <activity
             android:name=".activity_sub5_plt_width_any_boundary_gated_property_approval"
             android:exported="false" />
@@ -146,7 +177,8 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="false" >
+
 
         </activity>
     </application>

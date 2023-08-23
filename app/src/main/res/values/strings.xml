@@ -19,6 +19,40 @@
         <item>10 BHK</item>
         <!-- Add more options as needed -->
     </string-array>
+
+    <string-array name="spinner_values">
+        <item>Value 1</item>
+        <item>Value 2</item>
+        <item>Value 3</item>
+        <!-- Add more items as needed -->
+    </string-array>
+
+
+    <string-array name="unitvalues">
+
+        <item>Sqft</item>
+        <item>Sqyrd</item>
+        <item>Sqm</item>
+        <item>Acre</item>
+        <item>Bigha</item>
+        <item>Hectare</item>
+        <item>Marla</item>
+        <item>Kanal</item>
+        <item>Biswa1</item>
+        <item>Biswa2</item>
+        <item>Ground</item>
+        <item>Aankadam</item>
+        <item>Rood</item>
+        <item>Chatak</item>
+        <item>Kottah</item>
+        <item>Marla</item>
+        <item>Cent</item>
+        <item>Perch</item>
+        <item>Guntha</item>
+        <item>Are</item>
+
+        <!-- Add more items as needed -->
+    </string-array>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
