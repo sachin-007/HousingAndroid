@@ -4,22 +4,25 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.Context;
+import android.content.SharedPreferences;
 
 public class SharedPreferencesManager {
-    private static final String PREF_NAME = "MyPrefs";
-    private static final String USER_ID_KEY = "user_id";
-
-    private SharedPreferences prefs;
+    private static final String PREFS_NAME = "MyPrefs";
+    private static final String USER_ID = "userId";
+    private SharedPreferences preferences;
 
     public SharedPreferencesManager(Context context) {
-        prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        preferences = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
     }
 
     public void saveUserId(String userId) {
-        prefs.edit().putString(USER_ID_KEY, userId).apply();
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString(USER_ID, userId);
+        editor.apply();
     }
 
     public String getUserId() {
-        return prefs.getString(USER_ID_KEY, null);
+        return preferences.getString(USER_ID, null);
     }
 }

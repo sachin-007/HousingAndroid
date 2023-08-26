@@ -30,8 +30,27 @@ import retrofit2.http.Path;
 public interface ApiService {
         @POST("https://dev.cofastudio.com/demo/reallist.php/") // Replace with the actual PHP script name
         Call<Void> createProperty(@Body Propertyform property);
+//
+////    @GET("user/{uniqueId}")
+////    Call<Propertyform> getPropertyWithUniqueId(@Path("uniqueId") String uniqueId);
+//
+//
+//        public interface UserService {
+//                @POST("https://dev.cofastudio.com/demo/reallist.php/add-user/")
+//                Call<Void> addUser(@Body Propertyform property);
+//        }
+//
+////        public interface AuthService {
+////                @POST("")
+////                Call<Void> authenticate(@Body Propertyform property);
+////        }
+//
+//        @POST("https://dev.cofastudio.com/demo/reallist.php/add-user/") // Replace with the actual endpoint for authentication
+//        Call<UserResponse> authenticateUser(@Body LoginRequest loginRequest);
+//
 
-//    @GET("user/{uniqueId}")
-//    Call<Propertyform> getPropertyWithUniqueId(@Path("uniqueId") String uniqueId);
+
+        @POST("http://192.168.0.104    /reallist/realestate.php/authenticate/")
+        Call<UserResponse> authenticateUser(@Body LoginRequest loginRequest);
 
 }
