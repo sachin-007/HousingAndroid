@@ -1,6 +1,7 @@
 package com.example.housing.models;
 
 public class Property {
+    private String user_id;
     private String price;
     private String property;
     private String propertyby;
@@ -42,5 +43,13 @@ public class Property {
 
     public String getTripleSharePrice() {
         return tripleshareac;
+    }
+
+    public String getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 }

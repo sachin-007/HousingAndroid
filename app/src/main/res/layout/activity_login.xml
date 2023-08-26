@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".third">
+    tools:context=".Login">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Register"
+                android:text="Login"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:fontFamily="@font/urbanist_bold"
@@ -50,7 +50,7 @@
             android:drawablePadding="10dp"
             android:background="@drawable/textwhiteblack1"
             android:layout_marginTop="40dp"
-            android:hint=" Name"
+            android:hint=" Email"
             android:drawableStart="@drawable/profilefilled"
             android:paddingStart="20dp"
             android:layout_marginStart="20dp"
@@ -61,61 +61,6 @@
             android:textColorHint="#D3D3D3"
             />
 
-        <EditText
-            android:id="@+id/email"
-            android:drawablePadding="10dp"
-            android:background="@drawable/textwhiteblack1"
-            android:layout_marginTop="35dp"
-            android:hint=" Email"
-            android:drawableStart="@drawable/mailfilled"
-            android:paddingStart="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:textColor="@color/black"
-            android:textColorHint="#D3D3D3"
-            />
-
-        <LinearLayout
-            android:layout_marginTop="35dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/textwhiteblack1"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:orientation="horizontal">
-
-            <!-- EditText for Country Code -->
-            <EditText
-                android:backgroundTint="@android:color/transparent"
-                android:layout_marginStart="20dp"
-                android:id="@+id/edit_text_country_code"
-                android:layout_width="45dp"
-                android:layout_height="wrap_content"
-                android:inputType="phone"
-                android:hint="+91"
-                android:textColor="@color/black"
-                android:maxLines="1"
-                android:imeOptions="actionNext" />
-
-            <!-- EditText for Phone Number -->
-            <EditText
-                android:id="@+id/phone"
-                android:backgroundTint="@android:color/transparent"
-                android:inputType="phone"
-                android:textColor="@color/black"
-                android:layout_marginEnd="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:hint="WhatsApp Number"
-                android:textColorHint="#D3D3D3"
-                android:maxLines="1"
-                android:imeOptions="actionDone" />
-
-
-
-        </LinearLayout>
         <EditText
             android:id="@+id/password"
             android:drawablePadding="10dp"
@@ -138,10 +83,10 @@
             android:orientation="vertical"
             >
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/contfourth"
+                android:id="@+id/loginbtn"
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
-                android:text="Register"
+                android:text="Login"
                 android:textColor="@color/white"
                 android:background="@drawable/but_red"
                 android:textAllCaps="false"
@@ -150,20 +95,21 @@
                 />
 
             <TextView
-                android:id="@+id/loginbtn"
+                android:id="@+id/resiterbtn"
                 android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Login"
+                android:text="Register"
                 android:gravity="center_vertical|center_horizontal"
                 android:fontFamily="@font/celebes_reguler"
                 android:textSize="16sp"
                 android:textColor="@color/black"
 
                 />
-
         </LinearLayout>
 
 
     </LinearLayout>
+
+
 </RelativeLayout>

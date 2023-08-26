@@ -16,8 +16,8 @@ import java.util.UUID;
 public class secact extends AppCompatActivity {
 
 
-    SharedPreferencesManager prefsManager = new SharedPreferencesManager(this);
-    String uniqueId = prefsManager.getUniqueId();
+//    SharedPreferencesManager prefsManager = new SharedPreferencesManager(this);
+//    String uniqueId = prefsManager.getUniqueId();
 
 
     @Override

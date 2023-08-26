@@ -2,24 +2,24 @@ package com.example.housing;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.Context;
+import android.content.SharedPreferences;
 
 public class SharedPreferencesManager {
     private static final String PREF_NAME = "MyPrefs";
+    private static final String USER_ID_KEY = "user_id";
 
-    private final SharedPreferences sharedPreferences;
-    private final SharedPreferences.Editor editor;
+    private SharedPreferences prefs;
 
     public SharedPreferencesManager(Context context) {
-        sharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
-        editor = sharedPreferences.edit();
+        prefs = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
     }
 
-    public void saveUniqueId(String uniqueId) {
-        editor.putString("UniqueId", uniqueId);
-        editor.apply();
+    public void saveUserId(String userId) {
+        prefs.edit().putString(USER_ID_KEY, userId).apply();
     }
 
-    public String getUniqueId() {
-        return sharedPreferences.getString("UniqueId", null);
+    public String getUserId() {
+        return prefs.getString(USER_ID_KEY, null);
     }
 }

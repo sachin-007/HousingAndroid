@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.example.housing.models.Propertyform;
 
@@ -21,13 +22,14 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 public class third extends AppCompatActivity {
-
-
-
-
     Button contfourth;
-        private ApiService apiService;
-        private EditText name,email,phone;
+    private ApiService apiService;
+    private EditText name,email,phone,password;
+
+    TextView loginbtn;
+
+    private SharedPreferencesManager prefsManager;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -35,10 +37,8 @@ public class third extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_third);
 
-//        unique id is generated here
-        SharedPreferencesManager prefsManager = new SharedPreferencesManager(this);
-        String uniqueId = UUID.randomUUID().toString();
-        prefsManager.saveUniqueId(uniqueId);
+
+        prefsManager = new SharedPreferencesManager(this);
 
 
 
@@ -66,12 +66,13 @@ public class third extends AppCompatActivity {
                 apiService = retrofit.create(ApiService.class);
 
                 Propertyform property = new Propertyform();
-                property.setUniqueId(uniqueId);
+//                property.setUniqueId(uniqueId);
 
 
                 name=findViewById(R.id.name);
                 email=findViewById(R.id.email);
                 phone=findViewById(R.id.phone) ;
+                password=findViewById(R.id.password);
 
                 String nameText = name.getText().toString();
                 String emailText = email.getText().toString();
@@ -80,6 +81,8 @@ public class third extends AppCompatActivity {
                 property.setName(nameText);
                 property.setEmail(emailText);
                 property.setPhone(phoneText);
+                property.setPassword(password.getText().toString());
+                property.setWho_i_am("User");
 
 
                 Call<Void> call = apiService.createProperty(property);
@@ -107,11 +110,21 @@ public class third extends AppCompatActivity {
 
 
 
-                Intent intent=new Intent(third.this,secact.class);
+                Intent intent=new Intent(third.this,CoustomDashboardActivity.class);
                 startActivity(intent);
             }
         });
 
+
+
+        loginbtn=findViewById(R.id.loginbtn);
+        loginbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent logint = new Intent(third.this,Login.class);
+                startActivity(logint);
+            }
+        });
 
     }
 }
