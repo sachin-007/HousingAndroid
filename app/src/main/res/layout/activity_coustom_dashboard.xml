@@ -28,6 +28,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_weight="1" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/logologout"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/payrent_background"
+                android:text="Logout"
+                android:textAllCaps="false"
+                />
+
 
             <ImageView
                 android:layout_width="30dp"
@@ -233,15 +245,25 @@
                 android:padding="10dp"
                 android:background="@drawable/bottom_layout_whitebackground"
                 android:orientation="vertical">
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/urbanist_regular"
                     android:textSize="18sp"
                     android:padding="5dp"
                     android:text="Continue last search"
                     android:textColor="@color/black" />
-                    <ScrollView
+
+
+                </LinearLayout>
+
+
+                <ScrollView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         >

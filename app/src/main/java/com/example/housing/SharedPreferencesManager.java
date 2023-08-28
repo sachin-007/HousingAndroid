@@ -25,4 +25,10 @@ public class SharedPreferencesManager {
     public String getUserId() {
         return preferences.getString(USER_ID, null);
     }
+
+    public void remove() {
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString(USER_ID, null);
+        editor.apply();
+    }
 }

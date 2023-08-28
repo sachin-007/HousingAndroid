@@ -95,7 +95,8 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:hint="+91"
-                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textColor="#8a8a8a"
                 android:maxLines="1"
                 android:imeOptions="actionNext" />
 
@@ -112,9 +113,6 @@
                 android:textColorHint="#D3D3D3"
                 android:maxLines="1"
                 android:imeOptions="actionDone" />
-
-
-
         </LinearLayout>
         <EditText
             android:id="@+id/password"
@@ -122,7 +120,9 @@
             android:background="@drawable/textwhiteblack1"
             android:layout_marginTop="35dp"
             android:hint=" Password"
-            android:drawableStart="@drawable/mailfilled"
+            android:drawableStart="@drawable/passwordicn"
+            android:drawableEnd="@drawable/passeye"
+            android:paddingEnd="15dp"
             android:paddingStart="20dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="15dp"
@@ -130,6 +130,8 @@
             android:layout_height="45dp"
             android:textColor="@color/black"
             android:textColorHint="#D3D3D3"
+            android:inputType="textPassword"
+
             />
         <LinearLayout
             android:layout_margin="30dp"

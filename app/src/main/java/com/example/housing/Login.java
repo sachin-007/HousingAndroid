@@ -5,6 +5,8 @@ import androidx.appcompat.widget.AppCompatButton;
 import com.example.housing.ApiService;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Login extends AppCompatActivity {
 
-    TextView resiterbtn;
+    TextView resiterbtn,forget;
 
     private EditText usernameEditText;
     private EditText passwordEditText;
@@ -27,12 +29,43 @@ public class Login extends AppCompatActivity {
 
     private ApiService apiService;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+
+        EditText password = findViewById(R.id.password);
+
+        password.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View view, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_UP) {
+                    int drawableRight = 2; // Index of the drawableEnd
+                    if (event.getRawX() >= (view.getRight() - passwordEditText.getCompoundDrawables()[drawableRight].getBounds().width())) {
+                        // Toggle input type between text and textPassword
+                        if (passwordEditText.getInputType() == (InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD)) {
+                            passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+                        } else {
+                            passwordEditText.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+                        }
+                        passwordEditText.setSelection(passwordEditText.getText().length()); // Keep cursor at the end
+
+                        // Refresh the appearance of the EditText
+                        passwordEditText.refreshDrawableState();
+
+                        return true;
+                    }
+                }
+                return false;
+            }
+        });
+
+
         resiterbtn=findViewById(R.id.resiterbtn);
+        forget=findViewById(R.id.forget);
 
         prefsManager = new SharedPreferencesManager(this);
         usernameEditText = findViewById(R.id.email);
@@ -40,19 +73,12 @@ public class Login extends AppCompatActivity {
         loginbtn = findViewById(R.id.loginButton);
 
 
-
-
-
-
-
-
-
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Retrofit retrofit = new Retrofit.Builder()
-                        .baseUrl("http://192.168.0.104/reallist/realestate.php/authenticate/") // Replace with your base URL
+                        .baseUrl("https://dev.cofastudio.com/demo/reallist.php/authenticate/") // Replace with your base URL
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
 
@@ -91,6 +117,17 @@ public class Login extends AppCompatActivity {
                         Toast.makeText(Login.this, "Login failed: " + t.getMessage(), Toast.LENGTH_SHORT).show();
                     }
                 });
+            }
+        });
+
+
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(Login.this,com.example.housing.forget.class);
+                startActivity(intent);
+
             }
         });
 

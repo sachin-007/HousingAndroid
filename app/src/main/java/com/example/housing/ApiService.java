@@ -2,7 +2,9 @@ package com.example.housing;
 
 import com.example.housing.models.Propertyform;
 
+import okhttp3.ResponseBody;
 import retrofit2.Call;
+import retrofit2.Response;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -28,7 +30,7 @@ import retrofit2.http.Path;
 //}
 
 public interface ApiService {
-        @POST("https://dev.cofastudio.com/demo/reallist.php/") // Replace with the actual PHP script name
+        @POST("https://dev.cofastudio.com/demo/reallist.php/adduser/") // Replace with the actual PHP script name
         Call<Void> createProperty(@Body Propertyform property);
 //
 ////    @GET("user/{uniqueId}")
@@ -50,7 +52,10 @@ public interface ApiService {
 //
 
 
-        @POST("http://192.168.0.104    /reallist/realestate.php/authenticate/")
+        @POST("https://dev.cofastudio.com/demo/reallist.php/authenticate/")
         Call<UserResponse> authenticateUser(@Body LoginRequest loginRequest);
+
+        @POST("https://dev.cofastudio.com/demo/reallist.php/forget/")
+        Call<ResponseBody> forgetPassword(@Body ForgetPasswordRequest request);
 
 }

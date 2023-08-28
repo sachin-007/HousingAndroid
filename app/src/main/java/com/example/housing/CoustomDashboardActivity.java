@@ -1,18 +1,20 @@
 package com.example.housing;
 
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-
+import android.view.View;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 public class CoustomDashboardActivity extends AppCompatActivity {
-    private SharedPreferencesManager prefsManager;
+    public SharedPreferencesManager prefsManager;
+
+    AppCompatButton logologout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-
 
 
 
@@ -21,7 +23,7 @@ public class CoustomDashboardActivity extends AppCompatActivity {
 
         prefsManager = new SharedPreferencesManager(this);
 
-        Log.d("CustomDashboardActivity", "Activity created"); // Add this line
+        logologout = findViewById(R.id.logologout);
 
 
         String userId = prefsManager.getUserId();
@@ -35,6 +37,14 @@ public class CoustomDashboardActivity extends AppCompatActivity {
         }
 
 
+        logologout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                prefsManager.remove();
+                Intent logoutit = new Intent(CoustomDashboardActivity.this, Login.class);
+                startActivity(logoutit);
+            }
+        });
 
 
     }
